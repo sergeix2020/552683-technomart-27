@@ -1,4 +1,4 @@
-# Личный проект «Техномарт»
+# Личный проект «Техномарт.»
 
 * Студент: [Сергей Обухов](https://up.htmlacademy.ru/htmlcss/27/user/552683).
 * Наставник: [Руслан Бреев](https://htmlacademy.ru/profile/blckwltz).
