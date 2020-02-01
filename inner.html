@@ -85,27 +85,34 @@
         <ul>
           <li><input type="checkbox" id ="filter-bosch" name ="bosch" checked>
           <label for="filter-bosch">bosch</label>
-        </li><input type="checkbox" id ="filter-interscol" name ="interscol">
-          <li>
-          <label for="filter-interscol">нтерскол</label>и
+        </li>
+        <li><input type="checkbox" id ="filter-interscol" name ="interscol">
+          <label for="filter-interscol">нтерскол</label>
         </li>
           <li><input type="checkbox" id ="filter-makita" name ="makita" checked>
           <label for="filter-makita">makita</label>
         </li>
           <li><input type="checkbox" id ="filter-dewalt" name ="dewalt">
           <label for="filter-dewalt">dewalt</label>
-        </li><input type="checkbox" id ="filter-hitachi" name ="hitachi">
-          <li>
+        </li>
+        <li>
+        <input type="checkbox" id ="filter-hitachi" name ="hitachi">
           <label for="filter-hitachi">hitachi</label>
         </li>
         </ul>
       </fieldset>
       <fieldset>
         <legend>питание</legend>
-        <li><input type="radio" id ="filter-accumulator" name ="accumulator">
+        <ul>
+        <li>
+          <input type="radio" id ="filter-accumulator" name ="product" checked>
           <label for="filter-accumulator">аккумуляторные</label>
-          <li><input type="radio" id ="filter-network" name ="network">
+        </li>
+        <li>
+          <input type="radio" id ="filter-network" name ="product">
           <label for="filter-network">сетевые</label>
+        </li>
+      </ul>
       </fieldset>
       <button type ="button">Показать</button>
     </section>
@@ -185,7 +192,7 @@
     </section>
     <section class ="add-to-cart">
       <h2 class="visability-hidden">Добавить в корзину</h2>
-      <form action="" method="get">
+      <form action="#" method="get">
         <h2>Товар добавлен в корзину</h2>
         <div class="tick-block">
           <div class="tick">стилизованная галочка</div>
