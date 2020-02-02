@@ -76,27 +76,30 @@
     <section class ="sort-catalog">
       <h2>Сортировка:</h2>
       <ul>
-        <li><button type ="button" class ="button-price"/>По цене</li>
-        <li><button type ="button" class ="button-type"/>По типу</li>
-        <li><button type ="button" class ="button-functional"/>По функционалу</li>
+        <li><a href ="" class ="sort-price">По цене</a></li>
+        <li><a href ="" class ="sort-type">По типу</a></li>
+        <li><a href ="" class ="sort-functional">По функционалу</a></li>
+        <li><button type ="button" class ="sort-increase"/>По Возрастанию</li>
+        <li><button type ="button" class ="sort-decrease"/>По Убыванию</li>
       </ul>
+      <form class ="form-product" action="product.php" method="post">
       <fieldset>
         <legend>производители</legend>
         <ul>
-          <li><input type="checkbox" id ="filter-bosch" name ="bosch" checked>
+          <li><input type="checkbox" id ="filter-bosch" value="1" name ="product" checked>
           <label for="filter-bosch">bosch</label>
         </li>
-        <li><input type="checkbox" id ="filter-interscol" name ="interscol">
+        <li><input type="checkbox" id ="filter-interscol" value="2"  name ="product">
           <label for="filter-interscol">нтерскол</label>
         </li>
-          <li><input type="checkbox" id ="filter-makita" name ="makita" checked>
+          <li><input type="checkbox" id ="filter-makita" value="3" name ="product" checked>
           <label for="filter-makita">makita</label>
         </li>
-          <li><input type="checkbox" id ="filter-dewalt" name ="dewalt">
+          <li><input type="checkbox" id ="filter-dewalt" value="4" name ="product">
           <label for="filter-dewalt">dewalt</label>
         </li>
         <li>
-        <input type="checkbox" id ="filter-hitachi" name ="hitachi">
+        <input type="checkbox" id ="filter-hitachi" value="5" name ="product">
           <label for="filter-hitachi">hitachi</label>
         </li>
         </ul>
@@ -115,6 +118,7 @@
       </ul>
       </fieldset>
       <button type ="button">Показать</button>
+      </form>
     </section>
     <section class = "catalog">
       <ul class = "catalog-list">
@@ -195,7 +199,7 @@
     </section>
     <section class ="add-to-cart">
       <h2 class="visability-hidden">Добавить в корзину</h2>
-      <form action="#" method="get">
+      <form action="tick.php" method="get">
         <h2>Товар добавлен в корзину</h2>
         <div class="tick-block">
           <div class="tick">стилизованная галочка</div>
