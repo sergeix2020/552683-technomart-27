@@ -1,0 +1,265 @@
+body{
+  margin:0;
+  padding:0;
+  font-size:13px;
+  line-height: 24px;
+  color:white;
+  background-color: #282828;
+}
+a{
+  text-decoration:none;
+}
+.main-header{
+  background-color:#f4f7f9;
+}
+.main-header a:hover{
+ background-color:#ca2c37;
+}
+.wrapper{
+  background:black;
+}
+.main-logo{
+  text-transform: uppercase;
+  font-size:17px;
+  line-height:18px;
+  color: #ffffff;
+
+}
+.button-preview{
+  background-color:#293449;
+}
+.button-preview a{
+  font-size:17px;
+  line-height:18px;
+  color:#ffffff;
+  text-align:center;
+}
+.button-preview li{
+  list-style: none;
+}
+.button-preview .button-basket{
+  background-color:#ee3643;
+}
+.button-preview .place-button-current {
+  background-color:#63a63e;
+  text-align:center;
+}
+
+.shop-description{
+  font-size:16px;
+  line-height:23px;
+  color:#ee3643;
+}
+.person{
+  font-size:18px;
+  line-height:20px;
+  color:#000000;
+  font-weight: bold;
+
+}
+.header-contacts a{
+line-height:21px;
+color:#ee3643;
+}
+.header-contacts {
+font-size:14px;
+line-height:24px;
+}
+.header-contacts span{
+  color:#32425c;
+  font-size:14px;
+line-height:24px;
+}
+.authorization a{
+font-size:14px;
+line-height:24px;
+}
+.main-nav{
+  background-color:#32425c;
+}
+.main-nav li{
+list-style:none;
+font-size:18px;
+line-height:20px;
+}
+.order a{
+  color:#32425c;
+}
+.main-nav a{
+  color:#ffffff;
+}
+.breadcrumb .breadcrumb-items{
+  font-size:13px;
+  line-height:18px;
+  text-transform: uppercase;
+  color:#000000;
+}
+.breadcrumb li{
+  list-style:none;
+  font-size:13px;
+  line-height:18px;
+  text-transform: uppercase;
+
+}
+.main-heading{
+   font-size:30px;
+  line-height:30px;
+  color:;
+}
+.main-menu{
+  background-color:#ffffff;
+}
+.services h2{
+  color:#f5f8fa;
+}
+.form-product legend{
+  font-size:17px;
+  line-height:30px;
+}
+.form-product .filter-bosch,
+.form-product .filter-interscol,
+.form-product .filter-makita,
+.form-product .filter-dewalt,
+.form-product .filter-hitachi,
+.form-product .filter-accumulator,
+.form-product .filter-network
+{
+  text-transform: uppercase;
+  font-size:15px;
+  line-height:20px;
+  color:#000000;
+}
+.form-product li{
+  list-style:none;
+}
+.catalog-item .buy{
+  background-color:#63a63e;
+}
+.catalog-item .bookmark{
+  color:#32425c;
+  border:2px solid #63a63e;
+}
+.catalog-item .new{
+  color:#ee3643;
+}
+.catalog-item .perforator-list{
+  font-size:18px;
+  line-height:20px;
+  font-weight: bold;
+  color:#000000;
+}
+.catalog-list del{
+  color:#999999;
+}
+.catalog-list p{
+  color:#ee3643;
+}
+.catalog-list h3{
+  font-size:18px;
+  line-height:20px;
+  font-weight: bold;
+}
+.technomart-options-menu h3{
+  font-size:24px;
+  line-height:30px;
+  color:#ffffff;
+}
+.technomart-options-menu a{
+  font-size:24px;
+  line-height:30px;
+  color:#ffffff;
+}
+.techomart-company{
+  background-color:#ffffff;
+}
+.techomart-company h2{
+  font-size:18px;
+line-height:20px;
+color:#424242;
+}
+.techomart-company p{
+ font-size:13px;
+line-height:24px;
+color:#424242;
+}
+.select-company{
+color:#424242;
+}
+.techomart-company .about-company{
+   background-color:#ee3643;
+}
+.select-company li{
+  list-style: none;
+}
+.contacts h2{
+  font-size:30px;
+line-height:30px;
+color:#424242;
+}
+.contacts p{
+   font-size:13px;
+line-height:24px;
+color:#424242;
+}
+.contacts a{
+   background-color:#ee3643;
+}
+
+.product li{
+  list-style: none;
+}
+.main-footer{
+  background-color:#293449;
+}
+.main-footer p{
+  font-size:18px;
+line-height:24px;
+}
+.footer-list a{
+  font-size:18px;
+line-height:24px;
+background-color:#ffffff;
+}
+.footer-list li{
+  list-style: none;
+}
+
+.footer-adress{
+  font-size:18px;
+line-height:24px;
+color:#ffffff;
+}
+.footer-adress a{
+  font-size:18px;
+line-height:24px;
+color:#ffffff;
+}
+.contacts-info{
+  background-color:#293449;
+}
+.product a{
+  font-size:18px;
+line-height:24px;
+color:#ffda96;
+}
+.social li{
+  list-style: none;
+
+}
+.copyright-technomart{
+  font-size:16px;
+line-height:18px;
+}
+.copyright-technomart p{
+  font-size:16px;
+line-height:18px;
+}
+.Feedback a{
+  color:#88765d;
+}
+.htmlacademy-project a{
+color:#88765d;
+ font-size:16px;
+line-height:18px;
+}
+
