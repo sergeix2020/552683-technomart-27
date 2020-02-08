@@ -84,6 +84,9 @@ line-height:20px;
 }
 .order a{
   color:#32425c;
+  font-size:16px;
+line-height:18px;
+text-decoration: underline;
 }
 .main-nav a{
   color:#ffffff;
@@ -99,18 +102,41 @@ line-height:20px;
   font-size:13px;
   line-height:18px;
   text-transform: uppercase;
-
 }
-.main-heading{
+.main-menu h1{
    font-size:30px;
   line-height:30px;
-  color:;
+  color:#32425c;
 }
-.main-menu{
+main{
   background-color:#ffffff;
 }
 .services h2{
-  color:#f5f8fa;
+  color:#000000;
+  font-size:30px;
+  line-height:30px;
+}
+.services p{
+  color:#000000;
+  font-size:13px;
+  line-height:24px;
+}
+.services li{
+  list-style: none;
+}
+.services-catalog .services-item{
+
+  color:#ffffff;
+  font-size:21px;
+  line-height:30px;
+  font-weight: bold;
+}
+.services-catalog .services-item-current{
+   background-color:#ffffff;
+  color:#000000;
+  font-size:21px;
+  line-height:30px;
+  font-weight: bold;
 }
 .form-product legend{
   font-size:17px;
@@ -132,55 +158,173 @@ line-height:20px;
 .form-product li{
   list-style:none;
 }
-.catalog-item .buy{
-  background-color:#63a63e;
+.form-product button{
+   font-size:13px;
+  line-height:18px;
+  background-color:#ffffff;
+  color:#000000;
 }
-.catalog-item .bookmark{
-  color:#32425c;
-  border:2px solid #63a63e;
+.catalog-list li{
+  list-style: none;
 }
-.catalog-item .new{
-  color:#ee3643;
+.catalog-list .new,
+.catalog-list-product .new{
+  font-size:16px;
+  line-height:23px;
+  color:#ffffff;
+  background-color:#ee3643;
 }
-.catalog-item .perforator-list{
-  font-size:18px;
-  line-height:20px;
+.catalog-list h3{
+  font-size:24px;
+  line-height:30px;
+  color:#ffffff;
+}
+.catalog-list-yellow{
+  background-color:#ffbf47;
+}
+.catalog-list-blue{
+  background-color:#3bbce3;
+}
+.catalog-list-pink{
+  background-color:#dc91d8;
+}
+.catalog-list-green{
+  background-color:#8ed78f;
+}
+.catalog-list .big-drill{
+  font-size:30px;
+  line-height:30px;
   font-weight: bold;
   color:#000000;
 }
-.catalog-list del{
-  color:#999999;
-}
-.catalog-list p{
-  color:#ee3643;
-}
-.catalog-list h3{
+.catalog-list a{
   font-size:18px;
-  line-height:20px;
+  line-height:24px;
+  color:#ffffff;
+}
+.catalog-list-product del{
+  color:#999999;
+  font-size:17px;
+  line-height:18px;
   font-weight: bold;
 }
-.technomart-options-menu h3{
-  font-size:24px;
-  line-height:30px;
+.catalog-list-product .new-buy{
+  background-color:#ee3643;
+}
+.catalog-list-product .buy{
+  background-color:#63a63e;
+  color:#ffffff;
+  font-size:14px;
+  line-height:18px;
+}
+.catalog-list-product .bookmark{
+  border:2px solid #63a63e;
+  color:#32425c;
+  font-size:14px;
+  line-height:18px;
+}
+.catalog-list .open-catalog{
+  background-color:#ee3643;
+}
+.catalog-list-product p{
+  font-size:17px;
+  line-height:18px;
+  font-weight: bold;
   color:#ffffff;
 }
-.technomart-options-menu a{
-  font-size:24px;
-  line-height:30px;
+.catalog-list-product a{
+  font-size:14px;
+  line-height:18px;
   color:#ffffff;
+}
+.filter-catalog h2{
+  font-size:13px;
+  line-height:18px;
+  color:#000000;
+}
+.filter-price li{
+  color:#000000;
+  list-style: none;
+}
+.filter-catalog p{
+  font-size:17px;
+  line-height:30px;
+  color:#000000;
+  font-weight: bold;
+}
+.sort-catalog h2{
+  font-size:13px;
+  line-height:18px;
+  color:#000000;
+}
+.sort-increase{
+  color:#000000;
+  background-color:#ee3643;
+}
+.sort-decrease{
+  color:#000000;
+
+}
+.sort a{
+   font-size:13px;
+  line-height:18px;
+  text-transform: uppercase;
+}
+.sort .sort-price{
+  color:#ee3643;
+}.sort .sort-type,
+ .sort .sort-functional
+{
+  color:#000000;
+  text-decoration: underline;
+  opacity:0.5;
+}
+.sort .sort-price{
+  color:#ee3643;
+}
+.popular-product h2{
+  font-size:30px;
+  line-height:30px;
+  color:#32425c;
+  text-transform: uppercase;
+}
+.popular-product .all-product{
+  background-color:#ee3643;
+}
+.popular-product .all-popular-product{
+  font-size:14px;
+  line-height:18px;
+  text-align:center;
+}
+.catalog-list-product li{
+  list-style: none;
+}
+.catalog-list-product .perforator-list{
+  color:#000000;
+  font-weight: bold;
+  font-size:18px;
+  line-height:20px;
+
+}
+.popular-manufacturer h2{
+  font-size:30px;
+  line-height:30px;
+  color:#32425c;
+  text-transform: uppercase;
+
 }
 .techomart-company{
   background-color:#ffffff;
 }
 .techomart-company h2{
-  font-size:18px;
-line-height:20px;
-color:#424242;
+  font-size:30px;
+line-height:30px;
+color:#000000;
 }
 .techomart-company p{
  font-size:13px;
 line-height:24px;
-color:#424242;
+color:#000000;
 }
 .select-company{
 color:#424242;
@@ -190,16 +334,24 @@ color:#424242;
 }
 .select-company li{
   list-style: none;
+  font-size:18px;
+line-height:20px;
+color:#000000;
+}
+.pagination-list a{
+  font-size:13px;
+line-height:18px;
+color:#000000;
 }
 .contacts h2{
   font-size:30px;
 line-height:30px;
-color:#424242;
+color:#000000;
 }
 .contacts p{
    font-size:13px;
 line-height:24px;
-color:#424242;
+color:#000000;
 }
 .contacts a{
    background-color:#ee3643;
@@ -218,7 +370,7 @@ line-height:24px;
 .footer-list a{
   font-size:18px;
 line-height:24px;
-background-color:#ffffff;
+color:#ffffff;
 }
 .footer-list li{
   list-style: none;
@@ -234,9 +386,7 @@ color:#ffffff;
 line-height:24px;
 color:#ffffff;
 }
-.contacts-info{
-  background-color:#293449;
-}
+
 .product a{
   font-size:18px;
 line-height:24px;
