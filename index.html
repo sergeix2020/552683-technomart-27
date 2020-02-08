@@ -22,7 +22,7 @@
         <li class ="button button-bookmarks"><a href = "button">закладки:0</a>
           <p><img src = "img/icon-bookmark.png" alt = "закладки"/></p>
         </li>
-        <li class = "button"><a class = " button-basket" href = "#">корзина:0</a>
+        <li class = "button"><a  href = "#">корзина:0</a>
            <p><img src = "img/cart-icon.png" alt = "корзина"/></p>
         </li>
         <li class = "button "><a class ="place-button-current" href  = "#">оформить заказ</a></li>
@@ -55,35 +55,37 @@
     <main>
       <section class = "technomart-options-menu">
         <h1 class = "visality-hidden">Основное меню</h1>
-        <ul>
-          <li>
+        <ul class ="catalog-list">
+          <li class = "catalog-list-yellow">
             <h3>материалы</h3>
             <a href="">на любой вкус</a>
             <p><img src = "img/materials.png" alt = "строительный материал"/></p>
-            <p>new</p>
+            <p class ="new">new</p>
           </li>
-          <li>
+          <li class ="catalog-list-blue">
             <h3>Инструмент</h3>
             <a href="">на все случаи</a>
             <p><img src = "img/tool.png" alt ="строительный инструмент"/></p>
           </li>
-          <li>
+          <li class ="catalog-list-pink">
             <h3>Техника</h3>
             <a href="">для стройки</a>
             <p><img src = "img/technic.png" alt ="техника"/></p>
           </li>
           <li>
-             <h3>Дрели</h3>
+             <h3 class ="big-drill">Дрели</h3>
             <a href="">Соседям на радость</a>
             <p><img src = "img/drill.jpg" alt ="Дрели"/></p>
-            <a  href="">открыть каталог</a>
+            <div class="open-catalog">
+              <a  href="">открыть каталог</a>
+            </div>
           </li>
-          <li>
+          <li class ="catalog-list-green">
             <h3>Скидка 50%</h3>
             <a href="">на 350 товаров</a>
             <p><img src = "img/discount.png" alt ="скидки"/></p>
           </li>
-          <li>
+          <li class ="catalog-list-yellow">
             <h3>Доставка</h3>
              <a href="">бесплатно</a>
             <p><img src = "img/delivery.png" alt ="доставка"/></p>
@@ -91,15 +93,20 @@
         </ul>
       </section>
       <section class ="popular-product">
-        <a>Все популярные товары</a>
-        <ul class ="catalog-list">
+        <h2>Популярные товары</h2>
+        <div class="all-product">
+        <a class ="all-popular-product">Все популярные товары</a>
+      </div>
+        <ul class ="catalog-list-product">
           <li class ="catalog-item">
              <h3><a href = "#" class ="perforator-list">Перфоратор bosch bfg 9000</a></h3>
           <p>
             <a href = "#"><img src = "img/Perforator_1.jpg" alt = "bfg6000"/></a>
           </p>
           <del>32500 р</del>
-          <p>25500 р.</p>
+          <div class="new-buy">
+            <p>25500 р.</p>
+        </div>
           </li>
           <li class ="catalog-item">
             <h3><a href = "#" class ="perforator-list">Перфоратор bosch bfg 3000</a></h3>
@@ -107,7 +114,9 @@
             <a href = "#"><img src = "img/Perforator_2.jpg" alt = "bfg6000"/></a>
           </p>
           <del>22500 р</del>
-          <p>15500 р.</p>
+          <div class="new-buy">
+            <p>15500 р.</p>
+          </div>
           </li>
           <li class ="catalog-item">
             <h3><a href = "#" class ="perforator-list">Перфоратор bosch bfg 6000</a></h3>
@@ -115,18 +124,22 @@
             <a href = "#"><img src = "img/Perforator_3.jpg" alt = "bfg6000"/></a>
           </p>
           <del>30500 р</del>
-          <p>25500 р.</p>
+          <div class="new-buy">
+            <p>25500 р.</p>
+          </div>
           </li>
           <li class ="catalog-item">
             <h3><a href = "#" class ="perforator-list">Перфоратор bosch bfg 2000</a></h3>
           <p>
             <a href = "#"><img src = "img/Perforator_4.jpg" alt = "bfg6000"/></a>
           </p>
-          <p>12500 р.</p>
+         <div class="new-buy">
+            <p>12500 р.</p>
+          </div>
           </li>
         </ul>
       </section>
-      <section class = "popular manufacturer">
+      <section class = "popular-manufacturer">
         <h2>Популярные производители</h2>
         <a href="">Все производители</a>
         <ul class ="popular manufacturer-catalog">
@@ -198,7 +211,7 @@
       <nav class = "navigation-footer">
          <a class = "main-logo" href = ""><img src = "img/logo.png" alt = "логотип"/>техномарт</a>
         <ul class ="footer-list">
-          <li><a href="">Контакты</a></li>
+          <li><a href="">Компания</a></li>
           <li><a href="">Новости</a></li>
           <li><a href="">Каталог</a></li>
           <li><a href="">Доставка</a></li>
