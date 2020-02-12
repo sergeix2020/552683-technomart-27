@@ -1,4 +1,4 @@
-body{
+html,body{
 
   margin:0;
   padding:0;
@@ -6,7 +6,9 @@ body{
   font-size:13px;
   line-height: 24px;
   color:white;
-  background-color: #282828;
+  background-color: #ffffff;
+  margin:0 auto;
+  font-family: "PT Sans Narrow", "Cuprum" "Arial", sans-serif;
 }
 a{
   text-decoration:none;
@@ -78,10 +80,6 @@ width:100%;
   width:150px;
 
 }
-.label-new .catalog-item:nth-child(2n+1):not(:first-child):not(:last-child)::after{
-  content: "new";
-color:red;
-}
 .catalog-item{
   width:220px;
   min-height: 320px;
@@ -94,17 +92,21 @@ color:red;
   padding: 0;
   list-style:none;
    flex-wrap: wrap;
-
+}
+.label-new::before{
+  content: "new";
+  color:#ee3643;
+}
+.label-new-catalog::before{
+  content: "new";
+  color:#ee3643;
 }
 .main-catalog-list{
   width:300px;
-  min-height: 125px;
-  margin-right:20px;
-  margin-bottom: 20px;
-
+  height: 125px;
+margin-right:10px;
 }
-
-.main-catalog-list:nth-child(4n){
+.catalog-list-pink{
   margin-right:0;
 }
 
@@ -112,14 +114,15 @@ color:red;
   width:440px;
   height: 270px;
 }
-.catalog-item:nth-child(3n){
-  margin-right:0;
-}
+
 .catalog-items-product{
   display: flex;
   justify-content: space-between;
   margin:0;
   padding: 0;
+}
+.catalog-item:nth-child(3n){
+  margin:0;
 }
 .catalog-items-product .item-product{
   width:220px;
@@ -133,6 +136,7 @@ color:#000000;
   font-size:18px;
   line-height:20px;
 }
+
 .main-menu-header{
 width:100%;
 padding-top:45px;
@@ -280,7 +284,7 @@ main{
   line-height:30px;
   font-weight: bold;
 }
-.services-catalog .services-item-current{
+.services-catalog  a{
    background-color:#ffffff;
   color:#32425c;
   font-size:21px;
@@ -384,7 +388,7 @@ main{
   line-height:24px;
   color:#ffffff;
 }
-.catalog-list-product{
+.catalog-items-product{
   display: flex;
   flex-wrap: wrap;
   margin:0;
@@ -396,9 +400,7 @@ main{
   line-height:18px;
   font-weight: bold;
 }
-.catalog-items-product .item-product:nth-child(4n){
-  margin-right:0;
-}
+
 .catalog-items-product .new-buy{
   background-color:#ee3643;
 }
@@ -407,6 +409,9 @@ main{
   color:#ffffff;
   font-size:14px;
   line-height:18px;
+}
+.hidden{
+  display:none;
 }
 .catalog-list-product .bookmark{
   border:2px solid #63a63e;
@@ -426,7 +431,7 @@ main{
 .popular-manufacturer-catalog .item-manufacturer{
   width: 220px;
   height:148px;
-  border:1px solid black;
+
 
   text-align:center;
 
@@ -527,7 +532,7 @@ main{
   text-transform: uppercase;
 }
 .manufacturer-wrapper .container{
-  display: flex;
+  display: flex
 }
 
 .techomart-company{
@@ -570,7 +575,6 @@ font-family:"Cuprum";
 .index-columns{
   display:flex;
   justify-content: space-between;
-  padding:80px 130px;
   min-height: 365px;
 }
 .select-company {
@@ -583,10 +587,18 @@ line-height:20px;
 color:#000000;
 font-family:"Cuprum";
 }
+
+.pagination-list {
+  display: flex;
+}
+.pagination-current{
+  background-color:red;
+}
 .pagination-list a{
   font-size:13px;
 line-height:18px;
 color:#000000;
+ margin-right:10px;
 }
 .contacts h2{
   font-size:30px;
@@ -624,8 +636,6 @@ font-family: "Cuprum";
   padding-top:45px;
 
 }
-
-
 .navigation-footer{
   width:100%;
   background-color:#32425c;
@@ -665,6 +675,25 @@ width:500px;
   color:#f3f7f9;
   font-family: "Cuprum";
 }
+.article-perforator{
+  background-color:#f2f6f8;
+  padding-top:65px;
+  padding-bottom:75px;
+
+}
+.article-perforator h2{
+  font-size:30px;
+line-height:30px;
+font-family: "Cuprum";
+color:#000000;
+}
+
+.article-perforator p{
+  font-size:13px;
+line-height:24px;
+ font-family: "PT Sans";
+ color:#000000;
+}
 .footer-adr .container{
   display:flex;
   width:940px;
@@ -683,6 +712,9 @@ line-height:24px;
 font-family: "Cuprum";
 color:#ffda96;
 
+}
+.main-footer{
+  width:100%;
 }
 .contacts-info .container{
   display:flex;
