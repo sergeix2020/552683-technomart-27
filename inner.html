@@ -9,64 +9,88 @@
 </head>
 <body>
   <header class="main-header">
-      <div class="wrapper">
-      <a href = ""><img src = "img/logo.png" alt = "логотип"/>
-      <p class = "main-logo" >техномарт</p>
-    </a>
-      <ul class ="button-preview">
-        <li class = "button button-search"><a href = "#">поиск</a>
-          <p><img src = "img/icon-search.png" alt = "поиск"/></p>
-        </li>
-      </ul>
-      <ul class ="button-preview">
-        <li class ="button button-bookmarks"><a href = "button">закладки:0</a>
-          <p><img src = "img/icon-bookmark.png" alt = "закладки"/></p>
-        </li>
-        <li><a class = "button button-basket"href = "#">корзина:0</a>
-           <p><img src = "img/cart-icon.png" alt = "корзина"/></p>
-        </li>
-        <li class = "button "><a class ="place-button-current" href  = "#">оформить заказ</a></li>
-      </ul>
+      <div class="top-menu-header">
+        <div class="container">
+          <a href = ""><img src = "img/logo.png" alt = "логотип"/>
+          <!-- <p class = "main-logo" >техномарт</p> -->
+         </a>
+          <ul class ="button-preview">
+            <li class = "button button-search"><a href = "#">поиск</a>
+             <!--  <p><img src = "img/icon-search.png" alt = "поиск"/></p> -->
+            </li>
+          </ul>
+          <ul class ="button-preview">
+            <li class ="button button-bookmarks"><a href = "button">закладки:0</a>
+              <!-- <p><img src = "img/icon-bookmark.png" alt = "закладки"/></p> -->
+            </li>
+            <li class = "button button-basket"><a  href = "#">корзина:10</a>
+               <!-- <p><img src = "img/cart-icon.png" alt = "корзина"/></p> -->
+            </li>
+            <li class = "button "><a class ="place-button-current" href  = "#">оформить заказ</a></li>
+          </ul>
+      </div>
     </div>
-    <p class ="shop-description">Интернет магазин строительных материалов и инструментов для ремонта</p>
+    <div class="main-menu-header">
+      <div class="container">
+        <p class ="shop-description">Интернет магазин строительных материалов и инструментов для ремонта</p>
+        <div class="wrapper-contacts">
         <p class ="header-contacts">
           <a href = "tel:78125550555">+7(812)555-05-55</a><br>
-          <img src = "img/icon-phone.png" alt = "телефон"/>
-          <span>г.Санкт-Петербург,ул.Б.Конюшенная,д.19<br></span>
+          <!-- <img src = "img/icon-phone.png" alt = "телефон"/> -->
         </p>
-    <p><img src = "img/icon-user.png" alt = "человек"/></p>
+        <span>г.Санкт-Петербург,ул.Б.Конюшенная,д.19<br></span>
+      </div>
+    <!-- <p><img src = "img/icon-user.png" alt = "человек"/></p> -->
+    <div>
     <p class ="person">
       <a  class ="person" href ="">Равшан Джамшутович</a>
     </p>
-     <p><img src = "img/icon-login.png" alt = "войти"/></p>
+     <!-- <p><img src = "img/icon-login.png" alt = "войти"/></p> -->
     <ul class ="order">
       <li><a href ="#">Мои заказы</a></li>
       <li><a href ="#">Личный кабинет</a></li>
     </ul>
-    <nav class = "main-nav">
-      <ul>
-        <li><a href="inner.html">главная</a></li>
-        <li><a href="#">компания</a></li>
-        <li><a href="#">каталог</a></li>
-        <li><a href="#">новости</a></li>
-        <li><a href="#">спецпредложения</a></li>
-        <li><a href="#">доставка</a></li>
-        <li><a href="#">контакты</a></li>
-      </ul>
-    </nav>
-  </header>
+  </div>
+</div>
+</div>
+    <div class = "navigation">
+        <div class="container">
+        <ul class = "main-nav">
+          <li><a href="inner.html">главная</a></li>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Компания</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">контакты</a></li>
+        </ul>
+      </div>
+      </div>
+    </header>
   <main class ="main-menu">
     <div class = "breadcrumb">
-      <ul>
+      <div class="container">
+      <ul class ="breadcrumb-catalog">
         <li><a class ="breadcrumb-items" href="">Каталог</a></li>
         <li><a class ="breadcrumb-items"href="">Инструмент</a></li>
         <li class ="breadcrumb-items">Перфораторы</li>
       </ul>
     </div>
-    <h1 class = "main-heading">Перфораторы</h1>
+    </div>
     <section class ="filter-catalog">
+      <div class="container">
+    <h1 class = "main-heading">Перфораторы</h1>
       <h2>фильтр:</h2>
-      <p>цена:</p>
+      <ul class ="sort">
+         <li><a href ="" class ="sort-catalog sort-item">Сортировка:</a></li>
+        <li><a href ="" class ="sort-catalog sort-price">По цене</a></li>
+        <li><a href ="" class ="sort-catalog sort-type">По типу</a></li>
+        <li><a href ="" class ="sort-catalog sort-functional">По функционалу</a></li>
+        <li><button type ="button" class ="sort-catalog sort-increase"/>По Возрастанию</li>
+        <li><button type ="button" class ="sort-catalog sort-decrease"/>По Убыванию</li>
+      </ul>
+      <!-- <p>цена:</p> -->
       <!-- <svg>
         <circle r="8" cx="12"cy="20" fill="Silver"/>
         <circle r="8" cx="160"cy="20" fill="Silver"/>
@@ -75,24 +99,20 @@
         <line x1="20" y1="20" x2="150" y2="20" stroke="green"stroke-width="3" />
          <line x1="168" y1="20" x2="200" y2="20" stroke="blue"stroke-width="3" />
       </svg> -->
-      <ul class ="filter-price">
+      <!-- <ul class ="filter-price">
         <li>0</li>
         <li>-</li>
         <li>300</li>
-      </ul>
+      </ul> -->
     </section>
+    <div class="form-product-wrapper">
     <section class ="sort-catalog">
-      <h2>Сортировка:</h2>
-      <ul class ="sort">
-        <li><a href ="" class ="sort-price">По цене</a></li>
-        <li><a href ="" class ="sort-type">По типу</a></li>
-        <li><a href ="" class ="sort-functional">По функционалу</a></li>
-        <li><button type ="button" class ="sort-increase"/>По Возрастанию</li>
-        <li><button type ="button" class ="sort-decrease"/>По Убыванию</li>
-      </ul>
+      <!-- <h2 class="visability-hidden">Добавить в корзину</h2> -->
+
       <form class ="form-product" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset>
         <legend>производители</legend>
+        <h2>Производители</h2>
         <ul>
           <li><input type="checkbox" id ="filter-bosch" value="1" name ="product" checked>
           <label for="filter-bosch" class ="filter-bosch">bosch</label>
@@ -129,7 +149,7 @@
       </form>
     </section>
     <section class = "catalog">
-      <ul class = "catalog-list-product">
+      <ul class = "catalog-list-product  label-new">
         <li class ="catalog-item"><h3><a href = "#" class ="perforator-list">Перфоратор bosch bfg 3000</a></h3>
           <p>
             <a href = "#"> <img src = "img/perforator.jpg" alt = "bfg 3000"/></a>
@@ -154,7 +174,6 @@
           <p>
             <a href = "#"><img src = "img/perforator.jpg" alt = "bfg6000"/></a>
           </p>
-          <p class ="new">new</p>
             <a class ="buy">Купить</a>
             <a class ="bookmark">Закладки</a>
             <div class="new-buy">
@@ -176,7 +195,6 @@
           <p>
             <a href = "#"><img src = "img/perforator.jpg" alt = "bfg6000"/></a>
           </p>
-          <p class ="new">new</p>
           <del>30500 р</del>
           <div class="new-buy">
             <p>25500 р.</p>
@@ -196,7 +214,6 @@
           <p>
             <a href = "#"><img src = "img/perforator.jpg" alt = "bfg6000"/></a>
           </p>
-          <p class ="new">new</p>
           <del>22500 р</del>
           <div class="new-buy">
           <p>15500 р.</p>
@@ -224,6 +241,7 @@
         </li>
       </ul>
     </section>
+</div>
    <!--  <section class ="add-to-cart">
       <h2 class="visability-hidden">Добавить в корзину</h2>
       <form action="https://echo.htmlacademy.ru/" method="get">
@@ -251,14 +269,19 @@
   </main>
    <footer class = "main-footer">
       <nav class = "navigation-footer">
-         <a class = "main-logo" href = ""><img src = "img/logo.png" alt = "логотип"/>техномарт</a>
+        <div class="container">
+         <a class = "main-logo" href = ""><img src = "img/logo.png" width ="220" height ="75" alt = "логотип"/></a>
         <ul class ="footer-list">
-          <li><a href="">Контакты</a></li>
+          <li><a href="">Компания</a></li>
           <li><a href="">Новости</a></li>
           <li><a href="">Каталог</a></li>
           <li><a href="">Доставка</a></li>
+          <li><a href="">Контакты</a></li>
         </ul>
+      </div>
       </nav>
+      <div class="footer-adr">
+        <div class="container">
     <p class ="footer-adress">
       г.Санкт-Петербург,ул.Конюшенная д.19/8<br>
       <a href = "tel:78125550555">+7(812)555-05-55</a><br>
@@ -269,7 +292,10 @@
       <li><a href="">Инструмент</a></li>
       <li><a href="">Спецпредложения</a></li>
     </ul>
+  </div>
+</div>
     <div class="contacts-info">
+      <div class="container">
     <div class="copyright-technomart">
       <p>
         &copy; 2010-2017 Компания &laquo;Техномарт&raquo;<br>
@@ -292,6 +318,7 @@
         <a href ="htmlacademy.ru">htmlacademy.ru</a>
       </p>
     </div>
-    </footer>
+  </div>
+</footer>
 </body>
 </html>
