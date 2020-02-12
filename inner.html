@@ -69,17 +69,18 @@
       </div>
     </header>
   <main class ="main-menu">
+    <div class="container">
     <div class = "breadcrumb">
       <div class="container">
       <ul class ="breadcrumb-catalog">
         <li><a class ="breadcrumb-items" href="">Каталог</a></li>
-        <li><a class ="breadcrumb-items"href="">Инструмент</a></li>
+        <li><a class ="breadcrumb-items" href="">Инструмент</a></li>
         <li class ="breadcrumb-items">Перфораторы</li>
       </ul>
     </div>
     </div>
     <section class ="filter-catalog">
-      <div class="container">
+
     <h1 class = "main-heading">Перфораторы</h1>
       <h2>фильтр:</h2>
       <ul class ="sort">
@@ -87,8 +88,8 @@
         <li><a href ="" class ="sort-catalog sort-price">По цене</a></li>
         <li><a href ="" class ="sort-catalog sort-type">По типу</a></li>
         <li><a href ="" class ="sort-catalog sort-functional">По функционалу</a></li>
-        <li><button type ="button" class ="sort-catalog sort-increase"/>По Возрастанию</li>
-        <li><button type ="button" class ="sort-catalog sort-decrease"/>По Убыванию</li>
+        <li><button type ="button" class ="sort-catalog sort-increase">По Возрастанию</button></li>
+        <li><button type ="button" class ="sort-catalog sort-decrease">По Убыванию</button></li>
       </ul>
       <!-- <p>цена:</p> -->
       <!-- <svg>
@@ -106,6 +107,7 @@
       </ul> -->
     </section>
     <div class="form-product-wrapper">
+
     <section class ="sort-catalog">
       <!-- <h2 class="visability-hidden">Добавить в корзину</h2> -->
 
@@ -118,7 +120,7 @@
           <label for="filter-bosch" class ="filter-bosch">bosch</label>
         </li>
         <li><input type="checkbox" id ="filter-interscol" value="2"  name ="product">
-          <label for="filter-interscol"class ="filter-interscol">нтерскол</label>
+          <label for="filter-interscol" class ="filter-interscol">нтерскол</label>
         </li>
           <li><input type="checkbox" id ="filter-makita" value="3" name ="product" checked>
           <label for="filter-makita" class = "filter-makita">makita</label>
@@ -149,7 +151,7 @@
       </form>
     </section>
     <section class = "catalog">
-      <ul class = "catalog-list-product  label-new">
+      <ul class = "catalog-items-product">
         <li class ="catalog-item"><h3><a href = "#" class ="perforator-list">Перфоратор bosch bfg 3000</a></h3>
           <p>
             <a href = "#"> <img src = "img/perforator.jpg" alt = "bfg 3000"/></a>
@@ -169,7 +171,7 @@
             <p>25500 р.</p>
           </div>
         </li>
-        <li class ="catalog-item">
+        <li class ="catalog-item label-new-catalog">
           <h3><a href = "#" class ="perforator-list">Перфоратор bosch bfg 2000</a></h3>
           <p>
             <a href = "#"><img src = "img/perforator.jpg" alt = "bfg6000"/></a>
@@ -185,12 +187,12 @@
           <p>
             <a href = "#"><img src = "img/perforator.jpg" alt = "bfg6000"/></a>
           </p>
-          <del>22500 р</del><div class="new-buy">
+          <del>22500 р</del>
           <div class="new-buy">
             <p>15500 р.</p>
         </div>
         </li>
-        <li class ="catalog-item">
+        <li class ="catalog-item label-new-catalog">
           <h3><a href = "#" class ="perforator-list">Перфоратор bosch bfg 6000 </a></h3>
           <p>
             <a href = "#"><img src = "img/perforator.jpg" alt = "bfg6000"/></a>
@@ -209,7 +211,7 @@
           <p>12500 р.</p>
         </div>
         </li>
-        <li class ="catalog-item">
+        <li class ="catalog-item label-new-catalog">
           <h3><a href = "#" class ="perforator-list">Перфоратор bosch bfg 3000 </a></h3>
           <p>
             <a href = "#"><img src = "img/perforator.jpg" alt = "bfg6000"/></a>
@@ -229,7 +231,7 @@
           <p>25500 р.</p>
         </div>
         </li>
-        <li class ="catalog-item">
+        <li class ="catalog-item ">
           <h3><a href = "#" class ="perforator-list">Перфоратор bosch bfg 2000</a></h3>
           <p>
             <a href = "#"><img src = "img/perforator.jpg" alt = "bfg6000"/></a>
@@ -240,6 +242,12 @@
 
         </li>
       </ul>
+      <ul class = "pagination-list">
+      <li class= "pagination-current"><a href="">1</a></li>
+      <li><a href="">2</a></li>
+      <li><a href="">3</a></li>
+      <li><a href="">Следующая</a></li>
+    </ul>
     </section>
 </div>
    <!--  <section class ="add-to-cart">
@@ -256,19 +264,18 @@
       </ul>
       </form>
     </section> -->
-    <ul class = "pagination-list">
-      <li><a href="">1</a></li>
-      <li><a href="">2</a></li>
-      <li><a href="">3</a></li>
-      <li><a href="">Следующая</a></li>
-    </ul>
+    <section class="article-perforator">
+      <div class="container">
     <h2>Пара слов о перфораторах</h2>
     <p>Перфоратор-универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
       Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор &laquo;трехрежимников&raquo;: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
     </p>
+  </div>
+  </section>
   </main>
    <footer class = "main-footer">
       <nav class = "navigation-footer">
+        <div class="container">
          <a class = "main-logo" href = ""><img src = "img/logo.png" width ="220" height ="75" alt = "логотип"/></a>
         <ul class ="footer-list">
           <li><a href="">Компания</a></li>
@@ -277,6 +284,7 @@
           <li><a href="">Доставка</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
+      </div>
       </nav>
       <div class="footer-adr">
         <div class="container">
