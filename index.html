@@ -64,51 +64,58 @@
       </div>
     </header>
     <main>
-      <!-- <section class = "technomart-options-menu">
+      <div class="container">
+      <div class="main-wrapper">
+      <section class = "technomart-options-menu">
         <h1 class = "visality-hidden">Основное меню</h1>
-        <ul class ="catalog-list">
-          <li class = "catalog-list-yellow">
+        <ul class ="main-catalog">
+          <li class = "main-catalog-list catalog-list-yellow">
             <h3>материалы</h3>
             <a href="">на любой вкус</a>
             <p><img src = "img/materials.png" alt = "строительный материал"/></p>
           </li>
-          <li class ="catalog-list-blue">
+          <li class ="main-catalog-list catalog-list-blue">
             <h3>Инструмент</h3>
             <a href="">на все случаи</a>
             <p><img src = "img/tool.png" alt ="строительный инструмент"/></p>
           </li>
-          <li class ="catalog-list-pink">
+          <li class ="main-catalog-list catalog-list-pink">
             <h3>Техника</h3>
             <a href="">для стройки</a>
             <p><img src = "img/technic.png" alt ="техника"/></p>
           </li>
           <li>
-             <h3 class ="big-drill">Дрели</h3>
-            <a href="">Соседям на радость</a>
-            <p><img src = "img/drill.jpg" alt ="Дрели"/></p>
-            <div class="open-catalog">
+             <!-- <h3 class ="big-drill">Дрели</h3>
+            <a href="">Соседям на радость</a> -->
+            <p><img  src = "img/drill.jpg" width ="620" height ="270" alt ="Дрели"/></p>
+           <!--  <div class="open-catalog">
               <a  href="">открыть каталог</a>
-            </div>
+            </div> -->
           </li>
-          <li class ="catalog-list-green">
+          <li class ="main-catalog-list catalog-list-green">
             <h3>Скидка 50%</h3>
             <a href="">на 350 товаров</a>
             <p><img src = "img/discount.png" alt ="скидки"/></p>
           </li>
-          <li class ="catalog-list-yellow">
+          <li class ="main-catalog-list catalog-list-yellow">
             <h3>Доставка</h3>
              <a href="">бесплатно</a>
             <p><img src = "img/delivery.png" alt ="доставка"/></p>
           </li>
         </ul>
       </section>
-      <section class ="popular-product">
-        <h2>Популярные товары</h2>
-        <div class="all-product">
-        <a class ="all-popular-product">Все популярные товары</a>
       </div>
-        <ul class ="catalog-list-product">
-          <li class ="catalog-item">
+
+      <section class ="popular-product">
+        <div class="container">
+        <h2>Популярные товары</h2>
+        <p class="all-product">
+        <a class ="all-popular-product">Все популярные товары</a>
+      </p>
+    </div>
+        <div class="main-catalog-list-wrapper">
+        <ul class ="catalog-items-product">
+          <li class ="item-product">
              <h3><a href = "#" class ="perforator-list">Перфоратор bosch bfg 9000</a></h3>
           <p>
             <a href = "#"><img src = "img/Perforator_1.jpg" alt = "bfg6000"/></a>
@@ -118,7 +125,7 @@
             <p>25500 р.</p>
         </div>
           </li>
-          <li class ="catalog-item">
+          <li class ="item-product">
             <h3><a href = "#" class ="perforator-list">Перфоратор bosch bfg 3000</a></h3>
           <p>
             <a href = "#"><img src = "img/Perforator_2.jpg" alt = "bfg6000"/></a>
@@ -128,7 +135,7 @@
             <p>15500 р.</p>
           </div>
           </li>
-          <li class ="catalog-item">
+          <li class ="item-product">
             <h3><a href = "#" class ="perforator-list">Перфоратор bosch bfg 6000</a></h3>
           <p>
             <a href = "#"><img src = "img/Perforator_3.jpg" alt = "bfg6000"/></a>
@@ -138,7 +145,7 @@
             <p>25500 р.</p>
           </div>
           </li>
-          <li class ="catalog-item">
+          <li class ="item-product">
             <h3><a href = "#" class ="perforator-list">Перфоратор bosch bfg 2000</a></h3>
           <p>
             <a href = "#"><img src = "img/Perforator_4.jpg" alt = "bfg6000"/></a>
@@ -148,33 +155,46 @@
           </div>
           </li>
         </ul>
+        </div>
       </section>
+      <div class="manufacturer-wrapper">
       <section class = "popular-manufacturer">
+        <div class="manufacturer">
         <h2>Популярные производители</h2>
         <a href="">Все производители</a>
-        <ul class ="popular manufacturer-catalog">
-          <li><a href =""><p><img src ="img/bosch.png" alt ="bosch"/></p></a></li>
-          <li><a href =""><p><img src ="img/makita.png" alt ="makita"/></p></a></li>
-          <li><a href =""><p><img src ="img/dewalt.png" alt ="dewalt"/></p></a></li>
-          <li><a href =""><p><img src ="img/interscol.png" alt ="интерскол"/></p></a></li>
-          <li><a href =""><p><img src ="img/hitachi.png" alt ="hitachi"/></p></a></li>
-          <li><a href =""><p><img src ="img/lg.png" alt ="lg"/></p></a></li>
-          <li><a href =""><p><img src ="img/aeg.png" alt ="aeg"/></p></a></li>
-          <li><a href =""><p><img src ="img/metabo.png" alt ="metabo"/></p></a></li>
+          </div>
+        <ul class ="popular-manufacturer-catalog">
+          <li class ="item-manufacturer"><a href =""><p><img src ="img/bosch.png" alt ="bosch"/></p></a></li>
+          <li class ="item-manufacturer"><a href =""><p><img src ="img/makita.png" alt ="makita"/></p></a></li>
+          <li class ="item-manufacturer"><a href =""><p><img src ="img/dewalt.png" alt ="dewalt"/></p></a></li>
+          <li class ="item-manufacturer"><a href =""><p><img src ="img/interscol.png" alt ="интерскол"/></p></a></li>
+          <li class ="item-manufacturer"><a href =""><p><img src ="img/hitachi.png" alt ="hitachi"/></p></a></li>
+          <li class ="item-manufacturer"><a href =""><p><img src ="img/lg.png" alt ="lg"/></p></a></li>
+          <li class ="item-manufacturer"><a href =""><p><img src ="img/aeg.png" alt ="aeg"/></p></a></li>
+          <li class ="item-manufacturer"><a href =""><p><img src ="img/metabo.png" alt ="metabo"/></p></a></li>
         </ul>
       </section>
+      </div>
+      <div class="services-wrapper">
       <section class ="services">
+        <div class="service-text">
         <h2>Сервисы</h2>
         <p>Хороший интернет магазин отличается от плохого не только ценами! Мы стараемся изо всех сил,чтобы сделать ваши покупки приятными.</p>
+      </div>
+      <div class="services-catalog-list">
         <ul class ="services-catalog">
           <li class = "services-item-current"><a href="">Доставка</a></li>
           <li class = "services-item"><a href="">Гарантия</a></li>
           <li class = "services-item"><a href="">Кредит</a></li>
         </ul>
+        <div class="text-delivery">
         <h2>Доставка</h2>
         <p>Мы с удовольствием доставим вам товар прямо к вашему подъезду,совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-        <p><img src="img/delivery_1.png" alt="Доставка"></p>
-      </section> -->
+      </div>
+        <p><img src="img/delivery_1.png" width ="220" height = "150" alt="Доставка"></p>
+      </div>
+      </section>
+      </div>
       <div class="index-columns">
      <!--  <div class="container"> -->
       <section class = "techomart-company">
@@ -219,6 +239,7 @@
           <button class ="button" type ="submit">Отправить</button>
         </form>
       </section> -->
+    </div>
     </main>
     <footer class = "main-footer">
       <nav class = "navigation-footer">
