@@ -8,7 +8,7 @@ html,body{
   color:white;
   background-color: #ffffff;
   margin:0 auto;
-  font-family: "PT Sans Narrow", "Cuprum" "Arial", sans-serif;
+  font-family:"Cuprum",PT Sans;
 }
 a{
   text-decoration:none;
@@ -121,8 +121,8 @@ margin-right:10px;
   margin:0;
   padding: 0;
 }
-.catalog-item:nth-child(3n){
-  margin:0;
+.item-product:nth-child(3n){
+  margin:33px;
 }
 .catalog-items-product .item-product{
   width:220px;
@@ -149,7 +149,6 @@ padding-bottom:45px;
 .main-menu-header .shop-description {
   width:160px;
   font-style: italic;
-  font-family: "Cuprum";
    color:#ee3643;
 }
 .main-menu-header .header-contacts{
@@ -192,7 +191,6 @@ line-height:24px;
   color:#32425c;
   font-size:14px;
 line-height:24px;
-font-family: "Cuprum";
 }
 .authorization{
   display:flex;
@@ -206,7 +204,6 @@ font-family: "Cuprum";
 font-size:21px;
 line-height:21px;
 color:#000000;
-font-family: "Cuprum";
 }
 .authorization li{
   background-color:#ffffff;
@@ -226,7 +223,6 @@ line-height:20px;
   font-size:16px;
 line-height:18px;
 text-decoration: underline;
-font-family: "Cuprum";
 }
 .order{
   display: flex;
@@ -290,7 +286,6 @@ main{
   font-size:21px;
   line-height:30px;
   font-weight: bold;
-  font-family: "Cuprum";
 }
 .text-delivery{
   width:300px;
@@ -543,7 +538,6 @@ main{
   font-size:30px;
 line-height:30px;
 color:#000000;
-font-family: "Cuprum";
 }
 .techomart-company p{
  font-size:13px;
@@ -567,7 +561,6 @@ color:#424242;
   font-size:18px;
 line-height:20px;
 color:#000000;
-font-family:"Cuprum";
 }
 .techomart-company .about-company{
    background-color:#ee3643;
@@ -585,7 +578,6 @@ font-family:"Cuprum";
   font-size:18px;
 line-height:20px;
 color:#000000;
-font-family:"Cuprum";
 }
 
 .pagination-list {
@@ -629,7 +621,6 @@ line-height:24px;
   font-size:18px;
 line-height:24px;
 color:#ffffff;
-font-family: "Cuprum";
 }
 .footer-list li{
   list-style: none;
@@ -662,7 +653,6 @@ line-height:24px;
 
 }
 .footer-adress{
-  font-family: "Cuprum";
   font-size:18px;
 line-height:24px;
 width:500px;
@@ -673,7 +663,6 @@ width:500px;
 }
 .footer-adr a{
   color:#f3f7f9;
-  font-family: "Cuprum";
 }
 .article-perforator{
   background-color:#f2f6f8;
@@ -684,7 +673,6 @@ width:500px;
 .article-perforator h2{
   font-size:30px;
 line-height:30px;
-font-family: "Cuprum";
 color:#000000;
 }
 
@@ -709,7 +697,6 @@ line-height:24px;
 .product a{
   font-size:18px;
 line-height:24px;
-font-family: "Cuprum";
 color:#ffda96;
 
 }
@@ -736,13 +723,11 @@ color:#ffda96;
   font-size:16px;
 line-height:18px;
 color:#ffffff;
-font-family: "Cuprum";
 }
 .Feedback, .htmlacademy-project{
    font-size:16px;
 line-height:18px;
 color:#ffffff;
-font-family: "Cuprum";
 }
 .Feedback a{
   color:#ffd180;
