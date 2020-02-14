@@ -1,4 +1,4 @@
-html,body{
+body{
 
   margin:0;
   padding:0;
@@ -7,8 +7,8 @@ html,body{
   line-height: 24px;
   color:white;
   background-color: #ffffff;
-  margin:0 auto;
-  font-family:"Cuprum","PT Sans";
+  padding-left:10%;
+  font-family:"Cuprum",PT Sans;
 }
 a{
   text-decoration:none;
@@ -84,30 +84,41 @@ width:100%;
   width:220px;
   min-height: 320px;
   margin-right:20px;
-
+}
+.catalog-item:nth-child(3n){
+  margin:0;
 }
 .main-catalog{
   display: flex;
   margin:0;
   padding: 0;
   list-style:none;
-   flex-wrap: wrap;
+
 }
-.label-new::before{
+.other-main-catalog {
+margin-top:10px;
+}
+.other-wrapper-catalog{
+  display:flex;
+
+
+}
+/*.label-new::before{
   content: "new";
   color:#ee3643;
 }
 .label-new-catalog::before{
   content: "new";
   color:#ee3643;
-}
+}*/
 .main-catalog-list{
   width:300px;
   height: 125px;
-margin-right:10px;
+  margin-right:20px;
+
 }
-.catalog-list-pink{
-  margin-right:0;
+.main-catalog-list:nth-child(3n){
+  margin:0;
 }
 
 .drill-photo{
@@ -117,18 +128,17 @@ margin-right:10px;
 
 .catalog-items-product{
   display: flex;
-  justify-content: space-between;
   margin:0;
   padding: 0;
 }
-.item-product:nth-child(3n){
-  margin:33px;
+.catalog-items-product .item-product:nth-child(4){
+  margin:0;
 }
 .catalog-items-product .item-product{
   width:220px;
-  min-height:318px;
+  min-height:319px;
   margin-right:20px;
-  margin-bottom: 20px;
+
 }
 .catalog-items-product .perforator-list{
 color:#000000;
@@ -270,30 +280,44 @@ main{
   width:400px;
   font-family: "PT Sans";
 }
-.services li{
-  list-style: none;
-}
-.services-catalog .services-item{
 
+.services-item-current {
+
+  background-color: #FFFFFF;
+  width:240px;
+}
+.item-catalog{
   color:#ffffff;
   font-size:21px;
   line-height:30px;
-  font-weight: bold;
 }
-.services-catalog  a{
-   background-color:#ffffff;
-  color:#32425c;
+.services-catalog .services-item{
   font-size:21px;
   line-height:30px;
   font-weight: bold;
+  width:240px;
+background-color: #32425c;
+
+
+  list-style: none;
 }
 .text-delivery{
   width:300px;
   min-height: 150px;
+  color:#000000;
 }
 .services-catalog-list{
   display: flex;
   justify-content: space-between;
+
+}
+.services-catalog-list li{
+  list-style: none;
+  margin-right: 80px;
+}
+.services-catalog-list li:nth-child(1){
+  list-style: none;
+  margin-right: 80px;
 }
 .form-product button{
   margin-left:50px;
@@ -362,6 +386,9 @@ main{
 }
 .catalog-list-yellow{
   background-color:#ffbf47;
+
+
+
 }
 .catalog-list-blue{
   background-color:#3bbce3;
@@ -371,6 +398,11 @@ main{
 }
 .catalog-list-green{
   background-color:#8ed78f;
+
+}
+.two-block-catalog{
+  margin-left: 20px;
+  margin-top:10px;
 }
 .catalog-list .big-drill{
   font-size:30px;
@@ -386,8 +418,10 @@ main{
 .catalog-items-product{
   display: flex;
   flex-wrap: wrap;
-  margin:0;
-  padding:0;
+
+}
+.catalog-items-product h2{
+  order:3;
 }
 .catalog-items-product del{
   color:#999999;
@@ -399,7 +433,7 @@ main{
 .catalog-items-product .new-buy{
   background-color:#ee3643;
 }
-.catalog-list-product .buy{
+.catalog-items-product .buy{
   background-color:#63a63e;
   color:#ffffff;
   font-size:14px;
@@ -408,7 +442,7 @@ main{
 .hidden{
   display:none;
 }
-.catalog-list-product .bookmark{
+.catalog-items-product .bookmark{
   border:2px solid #63a63e;
   color:#32425c;
   font-size:14px;
@@ -418,17 +452,22 @@ main{
   display: flex;
   justify-content: space-between;
 }
+.manufacturer a{
+  font-size:14px;
+  line-height:18px;
+  color:#ffffff;
+}
 .popular-manufacturer-catalog{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  padding:0;
+  margin:0;
+
 }
 .popular-manufacturer-catalog .item-manufacturer{
   width: 220px;
   height:148px;
-
-
-  text-align:center;
+  text-align: center;
 
 }
 .catalog-list .open-catalog{
@@ -533,6 +572,7 @@ main{
 .techomart-company{
   background-color:#ffffff;
   width:530px;
+  padding-bottom:90px;
 }
 .techomart-company h2{
   font-size:30px;
@@ -565,7 +605,7 @@ color:#000000;
 .techomart-company .about-company{
    background-color:#ee3643;
 }
-.index-columns{
+.index-columns .container{
   display:flex;
   justify-content: space-between;
   min-height: 365px;
