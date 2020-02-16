@@ -1,14 +1,21 @@
-body{
-
-  margin:0;
-  padding:0;
+.body-header{
   width:1200px;
   font-size:13px;
   line-height: 24px;
   color:white;
   background-color: #ffffff;
-  padding-left:10%;
   font-family:"Cuprum",PT Sans;
+margin:0 auto;
+
+}
+.body-catalog{
+  width:1200px;
+  font-size:13px;
+  line-height: 24px;
+  color:white;
+  background-color: #ffffff;
+  font-family:"Cuprum",PT Sans;
+margin:0 auto;
 }
 a{
   text-decoration:none;
@@ -138,13 +145,19 @@ margin-top:10px;
   width:220px;
   min-height:319px;
   margin-right:20px;
-
+}
+.catalog-items-product h3{
+  text-align:center;
+  font-family: :PT Sans;
+  font-weight: bold; font-size:18px;
+    line-height:20px;
 }
 .catalog-items-product .perforator-list{
 color:#000000;
   font-weight: bold;
   font-size:18px;
   line-height:20px;
+
 }
 
 .main-menu-header{
@@ -157,9 +170,11 @@ padding-bottom:45px;
   justify-content: space-around;
 }
 .main-menu-header .shop-description {
-  width:160px;
   font-style: italic;
    color:#ee3643;
+   font-size:16px;
+  line-height:23px;
+  width:300px;
 }
 .main-menu-header .header-contacts{
   width:270px;
@@ -176,18 +191,27 @@ padding-bottom:45px;
   background-color:#63a63e;
   text-align:center;
 }
-.
 .shop-description{
+
   font-size:16px;
   line-height:23px;
   color:#ee3643;
 }
+.person-wrapper{
+  width:300px;
+   min-height:47px;
+}
 .person{
-  font-size:18px;
-  line-height:20px;
+  font-size:21px;
+  line-height:21px;
   color:#000000;
   font-weight: bold;
-
+  background-color:#ffffff;
+  text-align:center;
+}
+.person-wrapper span {
+  border:1px solid green;
+  vertical-align:middle;
 }
 .header-contacts a{
 line-height:21px;
@@ -207,6 +231,11 @@ line-height:24px;
   width:20%;
   justify-content: space-between;
 }
+..wrapper-contacts {
+  width:300px;
+}
+
+
 .wrapper-contacts span{
   color:#32425c;
 }
@@ -368,6 +397,7 @@ background-color: #32425c;
 .catalog{
   min-height: 976px;
   width:700px;
+
 }
 .catalog-list li{
   list-style: none;
@@ -420,33 +450,60 @@ background-color: #32425c;
   flex-wrap: wrap;
 
 }
-.catalog-items-product h2{
-  order:3;
+.catalog-items-product li{
+  order:2;
 }
 .catalog-items-product del{
   color:#999999;
   font-size:17px;
   line-height:18px;
   font-weight: bold;
+
 }
 
+.catalog-items-product h3{
+
+}
+.catalog-items-product .del{
+  text-align: center;
+
+}
 .catalog-items-product .new-buy{
   background-color:#ee3643;
+  min-height:35px;
 }
 .catalog-items-product .buy{
   background-color:#63a63e;
   color:#ffffff;
   font-size:14px;
   line-height:18px;
+   width:135px;
+  text-align:center;
+  padding-top:5px;
+
 }
 .hidden{
   display:none;
 }
 .catalog-items-product .bookmark{
-  border:2px solid #63a63e;
   color:#32425c;
   font-size:14px;
   line-height:18px;
+
+}
+
+.catalog-items-product .buy-p{
+  width:135px;
+  background-color:#63a63e;
+  text-align:center;
+  padding-top:5px;
+}
+.catalog-items-product .bookmark-p{
+ border:2px solid #63a63e;
+ width:135px;
+  text-align:center;
+  padding-top:5px;
+
 }
 .manufacturer{
   display: flex;
@@ -596,6 +653,10 @@ color:#424242;
   display: flex;
 
 }
+.empty{
+  padding-top:20px;
+  min-height:210px;
+}
 .techomart-company .company-list{
   list-style: none;
   font-size:18px;
@@ -622,6 +683,8 @@ color:#000000;
 
 .pagination-list {
   display: flex;
+  margin-top:56px;
+  padding:0;
 }
 .pagination-current{
   background-color:red;
@@ -630,7 +693,15 @@ color:#000000;
   font-size:13px;
 line-height:18px;
 color:#000000;
- margin-right:10px;
+
+
+}
+.pagination-list li{
+list-style: none;
+width:40px;
+height:40px;
+text-align: center;
+vertical-align: middle;
 }
 .contacts h2{
   font-size:30px;
@@ -687,7 +758,6 @@ line-height:24px;
 }
 .footer-list{
   display:flex;
-  flex-direction: end;
   justify-content: space-between;
   width:100%;
 
