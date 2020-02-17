@@ -1,27 +1,19 @@
-.body-header{
+body{
+  border:1px solid black;
   width:1200px;
   font-size:13px;
   line-height: 24px;
   color:white;
   background-color: #ffffff;
   font-family:"Cuprum",PT Sans;
-margin:0 auto;
-
-}
-.body-catalog{
-  width:1200px;
-  font-size:13px;
-  line-height: 24px;
-  color:white;
-  background-color: #ffffff;
-  font-family:"Cuprum",PT Sans;
-margin:0 auto;
+  margin:0 auto;
 }
 a{
   text-decoration:none;
 }
 .main-header{
   background-color:#f4f7f9;
+  width:100%;
 }
 .top-menu-header{
   width:100%;
