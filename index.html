@@ -11,24 +11,30 @@
     <header class="main-header">
       <div class="top-menu-header">
         <div class="container">
-          <a href = ""><img src = "img/logo.png" alt = "логотип"/>
-          <!-- <p class = "main-logo" >техомарт</p> -->
+
+          <div class="logo">
+            <div class="logo-img">
+          <a href = ""><img src = "img/logo.png"   alt = "логотип"/>
+          <span class = "main-logo" >техомарт</span>
           </a>
+          </div>
           <ul class ="button-preview">
-            <li class = "button button-search"><a href = "#">поиск</a>
-             <!--  <p><img src = "img/icon-search.png" alt = "поиск"/></p> -->
+            <li class = "button button-search"><a class="" href = "#">поиск</a>
+              <!-- <p><img src = "img/icon-search.png" alt = "поиск"/></p> -->
             </li>
           </ul>
+          </div>
           <ul class ="button-preview">
             <li class ="button button-bookmarks"><a href = "button">закладки:0</a>
               <!-- <p><img src = "img/icon-bookmark.png" alt = "закладки"/></p> -->
             </li>
-            <li class = "button"><a  href = "#">корзина:0</a>
+            <li class = "button button-cart"><a  href = "#">корзина:0</a>
                <!-- <p><img src = "img/cart-icon.png" alt = "корзина"/></p> -->
             </li>
-            <li class = "button "><a class ="place-button-current" href  = "#">оформить заказ</a></li>
+            <li class = "place-current"><a class ="place-button-current" href  = "#">оформить заказ</a></li>
           </ul>
-        </div>
+
+      </div>
       </div>
       <div class="main-menu-header">
         <div class="container">
@@ -43,10 +49,10 @@
             <span>г.Санкт-Петербург,ул.Б.Конюшенная,д.19<br></span>
           </div>
           <ul class ="authorization">
-            <li><a href = "#">Войти</a>
+            <li class ="open-authorization"><a href = "#">Войти</a>
               <!-- <p><img src = "img/icon-login.png" alt = "войти"/></p> -->
             </li>
-            <li><a href = "#">Регистрация</a></li>
+            <li class = "registration"><a href = "#">Регистрация</a></li>
           </ul>
         </div>
       </div>
@@ -65,35 +71,42 @@
       </div>
     </header>
     <main>
-      <div class="container">
+
         <div class="main-wrapper">
+          <div class="container">
           <section class = "technomart-options-menu">
-            <h1 class = "visality-hidden">Основное меню</h1>
+            <!-- <h1 class = "visality-hidden">Основное меню</h1> -->
+
             <ul class ="main-catalog">
               <li class = "main-catalog-list catalog-list-yellow label-new">
                 <h3>материалы</h3>
-                <a href="">на любой вкус</a>
-                <p><img src = "img/materials.png" alt = "строительный материал"/></p>
+                <p class = "taste catalog-list-yellow"><a class ="catalog-list-yellow-a" href="">на любой вкус</a></p>
+                <!-- <p><img src = "img/materials.png" alt = "строительный материал"/></p> -->
               </li>
               <li class ="main-catalog-list catalog-list-blue">
                 <h3>Инструмент</h3>
-                <a href="">на все случаи</a>
-                <p><img src = "img/tool.png" alt ="строительный инструмент"/></p>
+                <p class="taste"><a href="">на все случаи</a></p>
+                <!-- <p><img src = "img/tool.png" alt ="строительный инструмент"/></p> -->
               </li>
               <li class ="main-catalog-list catalog-list-pink">
                 <h3>Техника</h3>
-                <a href="">для стройки</a>
-                <p><img src = "img/technic.png" alt ="техника"/></p>
+                <p class ="taste"><a href="">для стройки</a></p>
+                <!-- <p><img src = "img/technic.png" alt ="техника"/></p> -->
               </li>
             </ul>
           </section>
         </div>
+      </div>
         <section class = "technomart-options-menu">
+         <div class="container">
           <div class="other-wrapper-catalog">
+
             <div class = "other-main-catalog">
-             <!--  <h3 class ="big-drill">Дрели</h3> -->
-             <!--  <a href="">Соседям на радость</a> -->
-               <p><img  src = "img/drill.jpg" width ="621" height ="270" alt ="Дрели"/></p>
+             <!-- <h3 class ="big-drill">Дрели</h3> -->
+               <!-- <p class ="joy-neighbors"><a href="">Соседям на радость</a></p> -->
+               <p class ="drill"><img  src = "img/drill.jpg" width ="621" height ="270" alt ="Дрели"/></p>
+               <div class="left-arrow"> </div>
+               <div class="right-arrow"></div>
               <!--  <div class="open-catalog">
                 <a  href="">открыть каталог</a>
               </div> -->
@@ -101,16 +114,17 @@
             <div class="two-block-catalog">
               <div class ="main-catalog-list catalog-list-green">
                 <h3>Скидка 50%</h3>
-                <a href="">на 350 товаров</a>
-                <p><img src = "img/discount.png" alt ="скидки"/></p>
+                <p class ="taste"><a href="">на 350 товаров</a></p>
+               <!--  <p><img src = "img/discount.png" alt ="скидки"/></p> -->
               </div>
-              <div class ="main-catalog-list catalog-list-yellow">
+              <div class ="main-catalog-list catalog-list-yellow delivery">
                 <h3>Доставка</h3>
-                 <a href="">бесплатно</a>
-                <p><img src = "img/delivery.png" alt ="доставка"/></p>
+                 <p class ="taste taste"><a href="">бесплатно</a></p>
+
               </div>
             </div>
           </div>
+        </div>
         </section>
       </div>
       <section class ="popular-product">
@@ -124,42 +138,44 @@
           <div class="container">
             <ul class ="catalog-items-product">
               <li class ="item-product">
-                 <h3><a href = "#" class ="perforator-list">Перфоратор bosch bfg 9000</a></h3>
               <p>
                 <a href = "#"><img src = "img/Perforator_1.jpg" alt = "bfg6000"/></a>
               </p>
+              <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 9000</a></h3>
               <del>32500 р</del>
               <div class="new-buy">
                 <p>25500 р.</p>
               </div>
               </li>
               <li class ="item-product">
-                <h3><a href = "#" class ="perforator-list">Перфоратор bosch bfg 3000</a></h3>
               <p>
                 <a href = "#"><img src = "img/Perforator_2.jpg" alt = "bfg6000"/></a>
               </p>
+              <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 3000</a></h3>
               <del>22500 р</del>
               <div class="new-buy">
                 <p>15500 р.</p>
               </div>
               </li>
               <li class ="item-product">
-                <h3><a href = "#" class ="perforator-list">Перфоратор bosch bfg 6000</a></h3>
               <p>
                 <a href = "#"><img src = "img/Perforator_3.jpg" alt = "bfg6000"/></a>
               </p>
+              <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 6000</a></h3>
               <del>30500 р</del>
               <div class="new-buy">
                 <p>25500 р.</p>
               </div>
               </li>
               <li class ="item-product label-new">
-                <h3><a href = "#" class ="perforator-list">Перфоратор bosch bfg 2000</a></h3>
               <p>
                 <a href = "#"><img src = "img/Perforator_4.jpg" alt = "bfg6000"/></a>
               </p>
+              <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 2000</a></h3>
+              <br>
+
+
              <div class="new-buy">
-                <del>2</del>
                 <p>12500 р.</p>
               </div>
               </li>
@@ -178,8 +194,8 @@
               <li class ="item-manufacturer"><a href =""><p><img src ="img/bosch.png" alt ="bosch"/></p></a></li>
               <li class ="item-manufacturer"><a href =""><p><img src ="img/makita.png" alt ="makita"/></p></a></li>
               <li class ="item-manufacturer"><a href =""><p><img src ="img/dewalt.png" alt ="dewalt"/></p></a></li>
-              <li class ="item-manufacturer"><a href =""><p><img src ="img/interscol.png" alt ="интерскол"/></p></a></li>
-              <li class ="item-manufacturer"><a href =""><p><img src ="img/hitachi.png" alt ="hitachi"/></p></a></li>
+              <li class ="item-manufacturer  interscol"><a href =""><p class ="interscol-align"><img src ="img/interscol.png" alt ="интерскол"/></p></a></li>
+              <li class ="item-manufacturer hitachi"><a href =""><p><img src ="img/hitachi.png" alt ="hitachi"/></p></a></li>
               <li class ="item-manufacturer"><a href =""><p><img src ="img/lg.png" alt ="lg"/></p></a></li>
               <li class ="item-manufacturer"><a href =""><p><img src ="img/aeg.png" alt ="aeg"/></p></a></li>
               <li class ="item-manufacturer"><a href =""><p><img src ="img/metabo.png" alt ="metabo"/></p></a></li>
@@ -196,15 +212,19 @@
             </div>
             <div class="services-catalog-list">
               <ul class ="services-catalog">
-                <li><a class = "services-item-current" href="">Доставка</a></li>
-                <li class = "services-item"><a class ="item-catalog" href="">Гарантия</a></li>
+                <li class ="list-catalog"><a class = "services-item-current" href="">Доставка</a></li>
+                <li class = "services-item hr"><a class ="item-catalog" href="">Гарантия</a></li>
                 <li class = "services-item"><a class ="item-catalog" href="">Кредит</a></li>
               </ul>
+
+
               <div class="text-delivery">
                 <h2>Доставка</h2>
-                <p>Мы с удовольствием доставим вам товар прямо к вашему подъезду,совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                <p>Мы с удовольствием доставим вам товар прямо<br>
+                 к вашему подъезду,совершенно бесплатно!<br>
+                  Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
               </div>
-              <p><img src="img/delivery_1.png" width ="220" height = "150" alt="Доставка"></p>
+             <!--  <p><img src="img/delivery_1.png" width ="420" height = "auto" alt="Доставка"></p> -->
             </div>
           </section>
         </div>
@@ -235,30 +255,12 @@
           </section>
         </div>
       </div>
-      <!-- <section>
-        <h2 class = "visability-hidden">Форма "Контакты"</h2>
-        <form class ="form-contacts" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="name">
-            <label for="your-name">Ваше имя:<br></label>
-            <input type="text" id ="your-name" name = "name" placeholder ="Имя Фамилия">
-          </p>
-          <p class="email">
-            <label for="your-email">Ваш e-email<br></label>
-            <input type="text" id ="your-email" name = "email" placeholder ="email@example.com">
-          </p>
-          <p class="message-text">
-            <label for="message">Текст письма:<br></label>
-            <textarea name="message" id="message"  cols="50" rows="5">В свободной форме</textarea>
-          </p>
-          <p>Закрыть</p>
-          <button class ="button" type ="submit">Отправить</button>
-        </form>
-      </section> -->
+
     </main>
     <footer class = "main-footer">
       <nav class = "navigation-footer">
         <div class="container">
-          <a class = "main-logo" href = ""><img src = "img/logo.png" width ="220" height ="75" alt = "логотип"/></a>
+          <a class = "main-logo" href = ""><img src = "img/logo.png" width ="220" height ="62" alt = "логотип"/></a>
           <ul class ="footer-list">
             <li><a href="">Компания</a></li>
             <li><a href="">Новости</a></li>
@@ -268,8 +270,32 @@
           </ul>
         </div>
       </nav>
+       <div class="map-img">
+
+     </div>
+    <section class ="section-form">
+        <h2 class = "visability-hidden">Форма "Контакты"</h2>
+        <form class ="form-contacts" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="name">
+            <label for="your-name">Ваше имя:</label><br>
+            <input type="text" id ="your-name" name = "name" placeholder ="Имя Фамилия">
+          </p>
+          <p class="email">
+            <label for="your-email">Ваш e-email<br></label>
+            <input type="text" id ="your-email" name = "email" width ="344" placeholder ="email@example.com">
+          </p><br>
+          <p class="message-text">
+            <label for="message">Текст письма:<br></label>
+            <textarea name="message" id="message"  cols="50" rows="5">В свободной форме</textarea>
+          </p>
+          <p>Закрыть</p>
+          <br>
+          <button class ="button" type ="submit">Отправить</button>
+        </form>
+      </section>
       <div class="footer-adr">
         <div class="container">
+          <span class = "main-logo" >техомарт</span>
           <p class ="footer-adress">
             г.Санкт-Петербург,ул.Конюшенная д.19/8<br>
             <a href = "tel:78125550555">+7(812)555-05-55</a><br>
@@ -308,5 +334,15 @@
         </div>
       </div>
     </footer>
+
+
+
+
+
+
+
+
+
+
   </body>
 </html>
