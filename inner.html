@@ -89,43 +89,58 @@
       <div class="container">
       <div class="perforator-article">
       <h1 class = "main-heading">Перфораторы</h1>
+      <svg  class ="svg-flag" width="780" height="120">
+            <line x1="420" y1="0" x2="440" y2="20" stroke="#ee3643" stroke-width="5"/>
+            <line x1="440" y1="0" x2="420" y2="20" stroke="#ee3643" stroke-width="5"/>
+           </svg>
       </div>
       </div>
-    </div>
-      <section class ="filter-catalog">
-        <div class="container">
-        <div class="filter">
-      <p>фильтр:</p>
-       <div class ="money">
-         <p>цена:</p>
-       </div>
-
-     <!--  <svg>
-        <circle r="8" cx="12"cy="20" fill="Silver"/>
-        <circle r="8" cx="160"cy="20" fill="Silver"/>
-        <circle r="3" cx="12"cy="20" fill="red"/>
-         <circle r="3" cx="160"cy="20" fill="red"/>
-        <line x1="20" y1="20" x2="150" y2="20" stroke="green"stroke-width="3" />
-         <line x1="168" y1="20" x2="200" y2="20" stroke="blue"stroke-width="3" />
-      </svg> -->
-      <ul class ="filter-price">
-        <li>0</li>
-        <li>-</li>
-        <li>300</li>
-      </ul>
-    </div>
-    <div class="sort-right">
+      <div class="sort-filter-wrapper">
+      <div class="container">
+        <ul class="sort-left">
+          <li><a href ="" class ="sort-catalog sort-item">Фильтр:</a></li>
+        </ul>
       <ul class ="sort">
-           <li><a href ="" class ="sort-catalog sort-item">Сортировка:</a></li>
+          <li><a href ="" class ="sort-catalog sort-item">Сортировка:</a></li>
           <li><a href ="" class ="sort-catalog sort-price">По цене</a></li>
           <li><a href ="" class ="sort-catalog sort-type">По типу</a></li>
           <li><a href ="" class ="sort-catalog sort-functional">По функционалу</a></li>
-          <li class ="sort-catalog sort-increase"></li>
-          <li class ="sort-catalog sort-decrease"></li>
+          <li class ="sort-catalog">По возрастанию</li>
+          <li class ="sort-catalog">По убванию</li>
         </ul>
+      </div>
     </div>
   </div>
-    </section>
+
+    <div class="money-wrapper">
+        <div class="container">
+
+       <div class ="money">
+         <p>цена:</p>
+       </div>
+     </div>
+     </div>
+      <section class="svg-wrapper">
+        <div class="container">
+    <svg class ="filter-svg"  width="220" height="80"  fill="green">
+        <circle r="8" cx="12"cy="20" fill="#ffffff"/>
+        <circle r="8" cx="160"cy="20" fill="#ffffff"/>
+        <circle r="3" cx="12"cy="20" fill="#b1b1b1"/>
+         <circle r="3" cx="160"cy="20" fill="#b1b1b1"/>
+        <line x1="20" y1="20" x2="150" y2="20" stroke="#00ca74"stroke-width="3" />
+         <line x1="168" y1="20" x2="200" y2="20" stroke="#d7dcde"stroke-width="3" />
+      </svg>
+    </div>
+  </section>
+     <div class="count-wrapper">
+       <div class="container">
+         <url class ="count-number">
+           <li><span>0</span></li>
+           <li class ="not-style-number"><span class ="not-style-number" >-</span></li>
+           <li><span>3000</span></li>
+         </url>
+       </div>
+     </div>
     <div class="form-product-wrapper">
           <div class="container">
       <section class ="sort-catalog">
@@ -135,7 +150,7 @@
         <fieldset>
           <legend>производители</legend>
           <h2>Производители</h2>
-          <ul>
+          <ul class ="product-wrapper">
             <li><input type="checkbox" id ="filter-bosch" value="1" name ="product" checked>
             <label for="filter-bosch" class ="filter-bosch">bosch</label>
           </li>
@@ -156,10 +171,11 @@
         </fieldset>
         <fieldset>
           <legend>питание</legend>
-          <ul>
+          <h2>Питание</h2>
+          <ul class ="product-wrapper">
           <li>
             <input type="radio" id ="filter-accumulator" name ="product" checked>
-            <label for="filter-accumulator" class ="filter-accumulator">аккумуляторные</label>
+            <label for="filter-accumulator" class ="filter-accumulator">аккуморные</label>
           </li>
           <li>
             <input type="radio" id ="filter-network" name ="product">
@@ -290,22 +306,28 @@
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор &laquo;трехрежимников&raquo;: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
         </p>
       </div>
-      </div>
     </section>
   </main>
+
   <footer class = "main-footer">
-    <nav class = "navigation-footer">
-      <div class="container">
-        <a class = "main-logo" href = ""><img src = "img/logo.png" width ="220" height ="75" alt = "логотип"/></a>
-        <ul class ="footer-list">
-          <li><a href="">Компания</a></li>
-          <li><a href="">Новости</a></li>
-          <li><a href="">Каталог</a></li>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
+      <nav class = "navigation-footer">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="logo">
+          <a href = ""><img src = "img/logo.png" width ="220" height ="62" alt = "логотип"/>
+              <span class = "main-logo" >техомарт</span>
+          </a>
+        </div>
+          <ul class ="footer-list">
+            <li><a href="">Компания</a></li>
+            <li><a href="">Новости</a></li>
+            <li><a href="">Каталог</a></li>
+            <li><a href="">Доставка</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </div>
       </div>
-    </nav>
+      </nav>
     <div class="footer-adr">
       <div class="container">
         <p class ="footer-adress">
@@ -330,9 +352,9 @@
         </div>
         <div class = "footer-social">
           <ul class = "social">
-            <li><a href="https://vk.com/htmlacademy"></a><img src = "img/vk-icon.png" alt = "в контакте"/></li>
-            <li><a href="https://www.facebook.com/htmlacademy"></a><img src = "img/fb-icon.png" alt = "Фейсбук"/></li>
-            <li><a href="https://www.instagram.com/htmlacademy"></a><img src = "img/insta-icon.png" alt = "Инстаграм"/></li>
+            <li><a href="https://vk.com/htmlacademy"><img src = "img/vk-icon.png" alt = "в контакте"/></a></li>
+            <li><a href="https://www.facebook.com/htmlacademy"><img src = "img/fb-icon.png" alt = "Фейсбук"/></a></li>
+            <li><a href="https://www.instagram.com/htmlacademy"><img src = "img/insta-icon.png" alt = "Инстаграм"/></a></li>
           </ul>
         </div>
         <p class ="Feedback"><img src = "img/vk-icon.png" alt = "в контакте"/>
@@ -365,11 +387,8 @@
         <li><a href ="" class ="button-current">Оформить заказ</a></li>
         <li><a href ="" class ="button">Продолжить покупки</a></li>
       </ul>
-       svg width="780" height="120">
-            <line x1="420" y1="0" x2="440" y2="20" stroke="#ee3643" stroke-width="5"/>
-            <line x1="440" y1="0" x2="420" y2="20" stroke="#ee3643" stroke-width="5"/>
-           </svg>
-      </div>
+    </div>
+
       </form>
     </section>
 </body>
