@@ -78,7 +78,11 @@
   <main class ="main-menu">
       <div class = "breadcrumb">
         <div class="container">
+
           <ul class ="breadcrumb-catalog">
+             <li><a class ="breadcrumb-items" href="">
+            <img src="img/icon-home.png" alt="домой">
+          </a></li>
             <li><a class ="breadcrumb-items" href="">Каталог</a></li>
             <li><a class ="breadcrumb-items" href="">Инструмент</a></li>
             <li class ="breadcrumb-items">Перфораторы</li>
@@ -89,10 +93,10 @@
       <div class="container">
       <div class="perforator-article">
       <h1 class = "main-heading">Перфораторы</h1>
-      <svg  class ="svg-flag" width="780" height="120">
+      <!-- <svg  class ="svg-flag" width="780" height="120">
             <line x1="420" y1="0" x2="440" y2="20" stroke="#ee3643" stroke-width="5"/>
             <line x1="440" y1="0" x2="420" y2="20" stroke="#ee3643" stroke-width="5"/>
-           </svg>
+           </svg> -->
       </div>
       </div>
       <div class="sort-filter-wrapper">
@@ -105,24 +109,29 @@
           <li><a href ="" class ="sort-catalog sort-price">По цене</a></li>
           <li><a href ="" class ="sort-catalog sort-type">По типу</a></li>
           <li><a href ="" class ="sort-catalog sort-functional">По функционалу</a></li>
-          <li class ="sort-catalog">По возрастанию</li>
-          <li class ="sort-catalog">По убванию</li>
+          <li class ="increase"><span>&#9650;</span></li>
+          <li class ="increase"><span>&#9660;</span></li>
         </ul>
       </div>
     </div>
   </div>
 
-    <div class="money-wrapper">
-        <div class="container">
+
+
+
+    <div class="form-product-wrapper">
+          <div class="container">
+      <section class ="sort-catalog">
+<div class="money-wrapper">
+
 
        <div class ="money">
-         <p>цена:</p>
+         <h2>цена:</h2>
        </div>
-     </div>
+
      </div>
       <section class="svg-wrapper">
-        <div class="container">
-    <svg class ="filter-svg"  width="220" height="80"  fill="green">
+    <svg class ="filter-svg"  width="220" height="60"  fill="green">
         <circle r="8" cx="12"cy="20" fill="#ffffff"/>
         <circle r="8" cx="160"cy="20" fill="#ffffff"/>
         <circle r="3" cx="12"cy="20" fill="#b1b1b1"/>
@@ -130,21 +139,16 @@
         <line x1="20" y1="20" x2="150" y2="20" stroke="#00ca74"stroke-width="3" />
          <line x1="168" y1="20" x2="200" y2="20" stroke="#d7dcde"stroke-width="3" />
       </svg>
-    </div>
   </section>
-     <div class="count-wrapper">
-       <div class="container">
+  <div class="count-wrapper">
+
          <url class ="count-number">
            <li><span>0</span></li>
            <li class ="not-style-number"><span class ="not-style-number" >-</span></li>
-           <li><span>3000</span></li>
+           <li><span>30000</span></li>
          </url>
-       </div>
-     </div>
-    <div class="form-product-wrapper">
-          <div class="container">
-      <section class ="sort-catalog">
 
+     </div>
         <!-- <h2 class="visability-hidden">Добавить в корзину</h2> -->
         <form class ="form-product" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset>
@@ -175,11 +179,11 @@
           <ul class ="product-wrapper">
           <li>
             <input type="radio" id ="filter-accumulator" name ="product" checked>
-            <label for="filter-accumulator" class ="filter-accumulator">аккуморные</label>
+            <label  class ="radio" for="filter-accumulator" class ="filter-accumulator">аккуморные</label>
           </li>
           <li>
             <input type="radio" id ="filter-network" name ="product">
-            <label for="filter-network" class ="filter-network">сетевые</label>
+            <label class ="radio" for="filter-network" class ="filter-network">сетевые</label>
           </li>
         </ul>
         </fieldset>
@@ -309,15 +313,15 @@
     </section>
   </main>
 
-  <footer class = "main-footer">
+   <footer class = "main-footer">
       <nav class = "navigation-footer">
         <div class="container">
           <div class="footer-wrapper">
             <div class="logo">
           <a href = ""><img src = "img/logo.png" width ="220" height ="62" alt = "логотип"/>
-              <span class = "main-logo" >техомарт</span>
           </a>
         </div>
+
           <ul class ="footer-list">
             <li><a href="">Компания</a></li>
             <li><a href="">Новости</a></li>
@@ -328,53 +332,56 @@
         </div>
       </div>
       </nav>
-    <div class="footer-adr">
-      <div class="container">
-        <p class ="footer-adress">
-          г.Санкт-Петербург,ул.Конюшенная д.19/8<br>
-          <a href = "tel:78125550555">+7(812)555-05-55</a><br>
-        </p>
-        <ul class ="product">
-          <li><a href="">Материалы</a></li>
-          <li><a href="">Техника</a></li>
-          <li><a href="">Инструмент</a></li>
-          <li><a href="">Спецпредложения</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="contacts-info">
-      <div class="container">
-        <div class="copyright-technomart">
-          <p>
-            &copy; 2010-2017 Компания &laquo;Техномарт&raquo;<br>
-            Все права защищены<br>
+       <div class="map-img">
+
+     </div>
+
+      <div class="footer-adr">
+        <div class="container">
+          <p class ="footer-adress">
+            г.Санкт-Петербург,ул.Конюшенная д.19/8<br>
+            <a href = "tel:78125550555">+7(812)555-05-55</a><br>
           </p>
-        </div>
-        <div class = "footer-social">
-          <ul class = "social">
-            <li><a href="https://vk.com/htmlacademy"><img src = "img/vk-icon.png" alt = "в контакте"/></a></li>
-            <li><a href="https://www.facebook.com/htmlacademy"><img src = "img/fb-icon.png" alt = "Фейсбук"/></a></li>
-            <li><a href="https://www.instagram.com/htmlacademy"><img src = "img/insta-icon.png" alt = "Инстаграм"/></a></li>
+          <ul class ="product">
+            <li><a href="">Материалы</a></li>
+            <li><a href="">Техника</a></li>
+            <li><a href="">Инструмент</a></li>
+            <li><a href="">Спецпредложения</a></li>
           </ul>
         </div>
-        <p class ="Feedback"><img src = "img/vk-icon.png" alt = "в контакте"/>
-          Обратная связь:<br>
-          <a href ="mailto:htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-        <p class ="htmlacademy-project">
-          Разработано-<br>
-          <a href ="http://htmlacademy.ru">htmlacademy.ru</a>
-        </p>
       </div>
-    </div>
-  </footer>
+      <div class="contacts-info">
+        <div class="container">
+          <div class="copyright-technomart">
+            <p>
+              &copy; 2010-2017 Компания &laquo;Техномарт&raquo;<br>
+              Все права защищены<br>
+            </p>
+          </div>
+          <div class = "footer-social">
+            <ul class = "social">
+              <li><a href="https://vk.com/htmlacademy"><img src = "img/vk-icon.png" alt = "в контакте"/></a></li>
+              <li><a href="https://www.facebook.com/htmlacademy"><img src = "img/fb-icon.png" alt = "Фейсбук"/></a></li>
+              <li><a href="https://www.instagram.com/htmlacademy"><img src = "img/insta-icon.png" alt = "Инстаграм"/></a></li>
+            </ul>
+          </div>
+          <p class ="Feedback"><img src = "img/vk-icon.png" alt = "в контакте"/>
+            Обратная связь:<br>
+            <a href ="mailto:htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class ="htmlacademy-project">
+            Разработано-<br>
+            <a href ="http://htmlacademy.ru">htmlacademy.ru</a>
+          </p>
+        </div>
+      </div>
+    </footer>
 
 
 
 
 
-
-  <section class ="add-to-cart">
+ <!--  <section class ="add-to-cart">
 
       <h2 class="visability-hidden">Добавить в корзину</h2>
       <form action="https://echo.htmlacademy.ru/" method="get">
@@ -390,6 +397,6 @@
     </div>
 
       </form>
-    </section>
+    </section> -->
 </body>
 </html>
