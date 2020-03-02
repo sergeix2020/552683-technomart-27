@@ -228,7 +228,7 @@ padding:0;
   margin-right:20px;
 }
 .catalog-item:nth-child(3n){
-  margin:0;
+  margin-right:0;
 }
 .main-catalog{
   display: flex;
@@ -238,9 +238,15 @@ padding:0;
 
 }
 .main-catalog .catalog-list-yellow{
-  background-color:#ffbf47;
+  background-color:rgba(255,191,71,.8);
   font-size:14px;
   line-height:18px;
+}
+.main-catalog .list-blue{
+   background-color:rgba(59,188,227,.8);
+  font-size:14px;
+  line-height:18px;
+
 }
 .other-main-catalog {
 margin-top:5px;
@@ -338,7 +344,7 @@ position: relative;
 
 
 }
-.catalog-list-yellow ::before{
+.list-yellow ::before{
    position:absolute;
 
   content:"";
@@ -365,7 +371,7 @@ top:30px;
 .occasions{
   position: relative;
 }
-.catalog-list-blue::before{
+.list-blue::before{
    position:absolute;
   content:"";
 background-image:url("../img/tool.png");
@@ -380,7 +386,7 @@ top:35px;
   content:"";
   z-index:4;
 }
-.catalog-list-pink::before{
+.list-pink::before{
   position:absolute;
   content:"";
 background-image:url("../img/technic.png");
@@ -390,7 +396,7 @@ width:80px;
 right:30px;
 top:30px;
 }
-.catalog-list-green::before{
+.list-green::before{
    position:absolute;
   content:"";
 background-image:url("../img/discount.png");
@@ -402,13 +408,12 @@ top:30px;
 }
 .main-catalog-list .taste{
   margin-top:10px;
-  background-color:green;
+
   width:134px;
   text-align: center;
   padding-top:10px;
   padding-bottom:10px;
   margin-left: 27px;
-  opacity:0.5;
   font-size:14px;
     line-height:18px;
 }
@@ -547,7 +552,7 @@ margin-top:34px;
   position: relative;
 }
 .person-wrapper a{
-
+padding-right:65px;
  padding-top: 10px;
  padding-bottom: 10px;
 
@@ -577,14 +582,18 @@ position: absolute;
   padding-left:35px;
   padding-top:10px;
 }
+
 .person-wrapper p::after{
   content:"";
   position: absolute;
   background-image: url("../img/icon-login.png");
+  right:10px;
   height:45px;
   width:22px;
   background-repeat: no-repeat;
+  opacity:0.3;
   }
+
 .person-wrapper span {
   border:1px solid green;
   vertical-align:middle;
@@ -734,7 +743,7 @@ padding:0;
 
 
 
-.breadcrumb-catalog li::after{
+.breadcrumb-catalog .breadcrumb-items::after{
   position: absolute;
   content:"";
   top:10px;
@@ -747,14 +756,7 @@ padding:0;
    transform: rotate(230deg);
 }
 
-.breadcrumb-catalog a{
-  padding-left:40px;
 
-
-
-   font-size:13px;
-  line-height:18px;
-}
 
 .filter p{
   font-size:13px;
@@ -800,14 +802,21 @@ list-style: none;
   background-color:#f2f6f8;
   width:220px;
 }
-.breadcrumb .breadcrumb-items{
+.breadcrumb .breadcrumb-items,
+.breadcrumb .breadcrumb-perforator
+{
   font-size:13px;
   line-height:18px;
   text-transform: uppercase;
   color:#000000;
+  padding-right:50px;
 }
-.breadcrumb-catalog li::nth-child(4n){
-  margin-left:20px;
+.increase-decrease{
+  display:flex;
+  list-style: none;
+}
+.increase-decrease span{
+  padding-right:10px;
 }
 .breadcrumb li{
 
@@ -894,10 +903,10 @@ padding-bottom: 15px;
   text-transform: uppercase;
 }
 label{
-  color: #c5c5c6;;
+  color: #000000;
   font-size:21px;
   line-height:30px;
-  font-weight: bold;
+
 
 }
 .text-delivery{
@@ -1016,25 +1025,26 @@ label{
   line-height:30px;
   color:#ffffff;
 }
-.catalog-list-yellow{
-  background-color:#ffbf47;
+.list-yellow{
+  background-color:rgb(255,191,71,.8);
 
 
 
 }
-.catalog-list-blue{
-  background-color:#3bbce3;
+.list-blue{
+  background-color:rgba(59,188,227,.8);
 }
-.catalog-list-pink{
-  background-color:#dc91d8;
+.list-pink{
+  background-color:rgba(220,145,216,.8);
 }
-.catalog-list-green{
-  background-color:#8ed78f;
+.list-green{
   margin-top:20px;
+  background-color:rgba(142,215,143,.8);
 
 }
 .delivery{
   margin-top:20px;
+  background-color:rgb(255,192,71,.8);
 
 }
 
@@ -1267,6 +1277,7 @@ padding-bottom:10px;
 }
 .sort-type, .sort-functional{
   border-bottom:1px dotted #ee3643;
+  opacity: 0.5;
 }
 .increase span{
   color:#ee3643;
@@ -1333,7 +1344,7 @@ input[type="radio"]+label::after {
   position:absolute;
   top:7px;
   right:4px;
-  margin-left:6px;
+  margin-left:7px;
   width: 10px;
   height: 10px;
   background-color: #c5c5c5;
