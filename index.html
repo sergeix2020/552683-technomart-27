@@ -17,20 +17,18 @@
           <a href = ""><img src = "img/logo.png"   alt = "логотип"/>
           </a>
           </div>
-          <ul class ="button-preview">
-            <li class = "button button-search"><a class="" href = "#">Поиск</a>
-              <!-- <p><img src = "img/icon-search.png" alt = "поиск"/></p> -->
-            </li>
-          </ul>
+          <form class ="form-search active-red" action="#" method = "post">
+            <input type="search" id ="search" name = "search"  placeholder="Поиск">
+          </form>
           </div>
           <ul class ="button-preview button-preview-right">
-            <li class ="button button-bookmarks"><a href = "button">Закладки: 0</a>
-              <!-- <p><img src = "img/icon-bookmark.png" alt = "закладки"/></p> -->
+            <li class ="button button-bookmarks"><a class ="active" href = "button">Закладки: 0</a>
+
             </li>
-            <li class = "button button-cart"><a  href = "#">Корзина: 0</a>
-               <!-- <p><img src = "img/cart-icon.png" alt = "корзина"/></p> -->
+            <li class = "button button-cart"><a class ="active"  href = "#">Корзина: 0</a>
+
             </li>
-            <li class = "place-current"><a class ="place-button-current" href  = "#">Оформить заказ</a></li>
+            <li class = "place-current"><a class ="place-button-current active" href  = "#">Оформить заказ</a></li>
           </ul>
 </div>
       </div>
@@ -60,7 +58,7 @@
           <ul class = "main-nav">
             <li class = "nav-main"><a href="inner.html">Главная</a></li>
             <li class = "nav-company"><a href="#">Компания</a></li>
-            <li class = "nav-catalog"><a href="#">Каталог</a></li>
+            <li class = "nav-catalog"><a href="inner.html">Каталог</a></li>
             <li class = "nav-news"><a href="#">Новости</a></li>
             <li class = "nav-special-offer"><a href="#">Спецпредложения</a></li>
             <li class = "nav-delivery"><a href="#">Доставка</a></li>
@@ -79,17 +77,17 @@
             <ul class ="main-catalog">
               <li class = "main-catalog-list list-yellow label-new">
                 <h3>Материалы</h3>
-                <p class = "taste list-yellow"><a class ="catalog-list-yellow-a" href="">на любой вкус</a></p>
+                <p class = "taste list-yellow color-y"><a class ="catalog-list-yellow-a " href="">на любой вкус</a></p>
                 <!-- <p><img src = "img/materials.png" alt = "строительный материал"/></p> -->
               </li>
               <li class ="main-catalog-list list-blue">
                 <h3>Инструмент</h3>
-                <p class="taste list-blue"><a href="">на все случаи</a></p>
+                <p class="taste list-blue color-blue"><a href="">на все случаи</a></p>
                 <!-- <p><img src = "img/tool.png" alt ="строительный инструмент"/></p> -->
               </li>
               <li class ="main-catalog-list list-pink">
                 <h3>Техника</h3>
-                <p class ="taste list-pink"><a href="">для стройки</a></p>
+                <p class ="taste list-pink color-pink"><a href="">для стройки</a></p>
                 <!-- <p><img src = "img/technic.png" alt ="техника"/></p> -->
               </li>
             </ul>
@@ -106,19 +104,19 @@
                <p class ="drill"><img  src = "img/drill.jpg" width ="621" height ="270" alt ="Дрели"/></p>
                <div class="left-arrow"> </div>
                <div class="right-arrow"></div>
-               <div class="open-catalog">
+               <div class="open-catalog effects">
                 <a  href="">открыть каталог</a>
               </div>
             </div>
             <div class="two-block-catalog">
               <div class ="main-catalog-list list-green">
                 <h3>Скидка 50%</h3>
-                <p class ="taste list-green"><a href="">на 350 товаров</a></p>
+                <p class ="taste list-green opacity-style"><a href="">на 350 товаров</a></p>
                <!--  <p><img src = "img/discount.png" alt ="скидки"/></p> -->
               </div>
-              <div class ="main-catalog-list catalog-list-yellow delivery">
+              <div class ="main-catalog-list catalog-list-yellow  delivery">
                 <h3>Доставка</h3>
-                 <p class ="taste delivery"><a href="">бесплатно</a></p>
+                 <p class ="taste  delivery opacity-style-delivery"><a href="">бесплатно</a></p>
 
               </div>
             </div>
@@ -212,7 +210,7 @@
               <li class ="item-manufacturer  interscol"><a href =""><p class ="interscol-align"><img src ="img/interscol.png" alt ="интерскол"/></p></a></li>
               <li class ="item-manufacturer hitachi"><a href =""><p><img src ="img/hitachi.png" alt ="hitachi"/></p></a></li>
               <li class ="item-manufacturer"><a href =""><p><img src ="img/lg.png" alt ="lg"/></p></a></li>
-              <li class ="item-manufacturer"><a href =""><p><img src ="img/aeg.png" alt ="aeg"/></p></a></li>
+              <li class ="item-manufacturer"><a href =""><p class ="aeg"><img src ="img/aeg.png" alt ="aeg"/></p></a></li>
               <li class ="item-manufacturer"><a href =""><p><img src ="img/metabo.png" alt ="metabo"/></p></a></li>
             </ul>
           </section>
@@ -302,11 +300,11 @@
       </section>
       </div> -->
     </main>
-    <footer class = "main-footer">
+   <footer class = "main-footer">
       <nav class = "navigation-footer">
         <div class="container">
           <div class="footer-wrapper">
-            <div class="logo">
+            <div class="logo-footer">
           <a href = ""><img src = "img/logo.png" width ="220" height ="62" alt = "логотип"/>
           </a>
         </div>
@@ -314,7 +312,7 @@
           <ul class ="footer-list">
             <li><a href="">Компания</a></li>
             <li><a href="">Новости</a></li>
-            <li><a href="">Каталог</a></li>
+            <li><a href="inner.html">Каталог</a></li>
             <li><a href="">Доставка</a></li>
             <li><a href="">Контакты</a></li>
           </ul>
@@ -343,7 +341,7 @@
         <div class="container">
           <div class="copyright-technomart">
             <p>
-              &copy; 2010-2017 Компания &laquo;Техномарт&raquo;<br>
+              &copy; 2010-2019 Компания &laquo;Техномарт&raquo;<br>
               Все права защищены<br>
             </p>
           </div>
@@ -354,7 +352,8 @@
               <li><a href="https://www.instagram.com/htmlacademy"><img src = "img/insta-icon.png" alt = "Инстаграм"/></a></li>
             </ul>
           </div>
-          <p class ="Feedback"><img src = "img/vk-icon.png" alt = "в контакте"/>
+          <div class="contacts-wrapper">
+          <p class ="Feedback">
             Обратная связь:<br>
             <a href ="mailto:htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
@@ -363,6 +362,7 @@
             <a href ="http://htmlacademy.ru">htmlacademy.ru</a>
           </p>
         </div>
+      </div>
       </div>
     </footer>
 
