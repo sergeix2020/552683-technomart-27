@@ -11,47 +11,41 @@
   <header class="main-header">
     <div class="top-menu-header">
         <div class="container">
-
           <div class="logo">
             <div class="logo-img">
           <a href = ""><img src = "img/logo.png"   alt = "логотип"/>
           </a>
           </div>
-          <ul class ="button-preview">
-            <li class = "button button-search"><a class="" href = "#">поиск</a>
-              <!-- <p><img src = "img/icon-search.png" alt = "поиск"/></p> -->
+          <form class ="form-search active-red" action="#" method = "post">
+            <input class = "search-placeholder" type="search" id ="search" name = "search"  placeholder="Поиск">
+          </form>
+        </div>
+          <ul class ="button-preview button-preview-right">
+            <li class ="button button-bookmarks"><a class ="active" href = "button">Закладки: 0</a>
             </li>
+            <li class = "button button-cart link-red"><a class ="active"  href = "#">Корзина: 10</a>
+            </li>
+            <li class = "place-current"><a class ="place-button-current active" href  = "#">Оформить заказ</a></li>
           </ul>
-          </div>
-          <ul class ="button-preview">
-            <li class ="button button-bookmarks"><a href = "button">закладки:0</a>
-              <!-- <p><img src = "img/icon-bookmark.png" alt = "закладки"/></p> -->
-            </li>
-            <li class = "button button-cart-catalog"><a class ="place-button-current-catalog"  href = "#">корзина:10</a>
-               <!-- <p><img src = "img/cart-icon.png" alt = "корзина"/></p> -->
-            </li>
-            <li class = "place-current"><a class ="place-button-current" href  = "#">оформить заказ</a></li>
-          </ul>
-
       </div>
       </div>
+    </div>
     <div class="main-menu-header">
         <div class="container">
           <p class ="shop-description">
             Интернет магазин<br>
             строительных материалов<br> и инструментов для ремонта</p>
           <div class="wrapper-contacts">
-            <p class ="header-contacts">
+            <p class ="header-contacts phone">
               <a href = "tel:78125550555">+7(812)555-05-55</a><br>
-              <!-- <img src = "img/icon-phone.png" alt = "телефон"/> -->
             </p>
-            <span>г.Санкт-Петербург,ул.Б.Конюшенная,д.19<br></span>
+            <span>г. Санкт-Петербург,ул. Б. Конюшенная,д. 19/8<br></span>
           </div>
         <div class ="person-wrapper">
           <p class ="person-catalog">
             <a  class ="person" href ="">Равшан Джамшутович</a>
           </p>
-         <!-- <p><img src = "img/icon-login.png" alt = "войти"/></p> -->
+
           <ul class ="order">
             <li><a href ="#">Мои заказы</a></li>
             <li class ="t">.</li>
@@ -101,17 +95,17 @@
       <div class="sort-filter-wrapper">
       <div class="container">
         <ul class="sort-left">
-          <li><a href ="" class ="sort-catalog sort-item">Фильтр:</a></li>
+          <li class ="filter-catalog sort-item"><a href ="" >Фильтр:</a></li>
+           <li class ="sort-catalog sort-item"><a href ="">Сортировка:</a></li>
         </ul>
       <ul class ="sort">
-          <li><a href ="" class ="sort-catalog sort-item">Сортировка:</a></li>
           <li><a href ="" class ="sort-catalog sort-price">По цене</a></li>
           <li><a href ="" class ="sort-catalog sort-type">По типу</a></li>
           <li><a href ="" class ="sort-catalog sort-functional">По функционалу</a></li>
         </ul>
         <ul class ="increase-decrease">
           <li class ="increase"><span>&#9650;</span></li>
-          <li class ="increase"><span>&#9660;</span></li>
+          <li class ="decrease"><span>&#9660;</span></li>
         </ul>
       </div>
     </div>
@@ -133,12 +127,12 @@
      </div>
       <section class="svg-wrapper">
     <svg class ="filter-svg"  width="220" height="60"  fill="green">
-        <circle r="8" cx="12"cy="20" fill="#ffffff"/>
-        <circle r="8" cx="160"cy="20" fill="#ffffff"/>
-        <circle r="3" cx="12"cy="20" fill="#b1b1b1"/>
-         <circle r="3" cx="160"cy="20" fill="#b1b1b1"/>
-        <line x1="20" y1="20" x2="150" y2="20" stroke="#00ca74"stroke-width="3" />
-         <line x1="168" y1="20" x2="200" y2="20" stroke="#d7dcde"stroke-width="3" />
+        <circle r="12" cx="30"cy="20" fill="#ffffff"/>
+        <circle r="12" cx="170"cy="20" fill="#ffffff"/>
+        <circle r="2" cx="30"cy="20" fill="#b1b1b1"/>
+         <circle r="2" cx="170"cy="20" fill="#b1b1b1"/>
+        <line x1="40" y1="20" x2="160" y2="20" stroke="#00ca74"stroke-width="2" />
+         <line x1="185" y1="20" x2="200" y2="20" stroke="#d7dcde"stroke-width="2" />
       </svg>
   </section>
   <div class="count-wrapper">
@@ -180,9 +174,9 @@
           <ul class ="product-wrapper">
           <li>
             <input type="radio" id ="filter-accumulator" name ="product" checked>
-            <label  class ="radio" for="filter-accumulator" class ="filter-accumulator">аккуморные</label>
+            <label  class ="radio" for="filter-accumulator" class ="filter-accumulator">аккумуляторные</label>
           </li>
-          <li>
+          <li class ="filter-radio-wrapper">
             <input type="radio" id ="filter-network" name ="product">
             <label class ="radio" for="filter-network" class ="filter-network">сетевые</label>
           </li>
@@ -198,7 +192,7 @@
             <p>
               <a href = "#"> <img src = "img/perforator.jpg" alt = "bfg 3000"/></a>
             </p>
-            <h3><a href = "#" class ="perforator-list">Перфоратор bosch<br> bfg 3000</a></h3>
+            <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 3000</a></h3>
             <p class ="del"><del>22500 р</del></p>
             <div class="new-buy">
               <p>15500 р.</p>
@@ -206,9 +200,9 @@
           </li>
           <li class ="catalog-item">
             <p>
-              <a href = "#"><img src = "img/perforator.jpg" alt = "bfg6000"/></a>
+              <a href = "#"><img src = "img/perforator_3.jpg" alt = "bfg6000"/></a>
             </p>
-            <h3><a href = "#" class ="perforator-list">Перфоратор bosch<br> bfg 6000</a></h3>
+            <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 6000</a></h3>
             <p class ="del"><del>30500 р</del></p>
             <div class="new-buy">
               <p>25500 р.</p>
@@ -219,9 +213,10 @@
             <div>
               <div class="empty">
                 <p class ="buy-p"> <a href = "" class ="buy">Купить</a></p>
-              <p class ="bookmark-p"><a  href = "" class ="bookmark">Закладки</a></p>
+              <p class ="bookmark-p"><a  href = "" class ="bookmark">В Закладки</a></p>
               </div>
-                <h3><a href = "#" class ="perforator-list">Перфоратор bosch<br> bfg 2000</a></h3>
+                <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 2000</a></h3>
+                <p class ="del"><del></del></p>
             </div>
 
               <div class="new-buy">
@@ -232,7 +227,7 @@
             <p>
               <a href = "#"><img src = "img/perforator.jpg" alt = "bfg6000"/></a>
             </p>
-            <h3><a href = "#" class ="perforator-list">Перфоратор bosch<br> bfg 3000</a></h3>
+            <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 3000</a></h3>
             <p class ="del"><del>22500 р</del></p>
             <div class="new-buy">
               <p>15500 р.</p>
@@ -240,9 +235,9 @@
           </li>
           <li class ="catalog-item label-new-catalog">
             <p>
-              <a href = "#"><img src = "img/perforator.jpg" alt = "bfg6000"/></a>
+              <a href = "#"><img src = "img/perforator_3.jpg" alt = "bfg6000"/></a>
             </p>
-            <h3><a href = "#" class ="perforator-list">Перфоратор bosch<br> bfg 6000 </a></h3>
+            <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 6000 </a></h3>
             <p class ="del"><del>30500 р</del></p>
             <div class="new-buy">
               <p>25500 р.</p>
@@ -251,8 +246,9 @@
           <li class ="catalog-item">
             <p>
               <a href = "#"><img src = "img/perforator.jpg" alt = "bfg6000"/></a>
-            </p><br>
-            <h3><a href = "#" class ="perforator-list">Перфоратор bosch<br> bfg 2000</a></h3>
+            </p>
+            <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 2000</a></h3>
+            <p class ="del"><del></del></p>
             <div class="new-buy">
               <p>12500 р.</p>
             </div>
@@ -261,7 +257,7 @@
             <p>
               <a href = "#"><img src = "img/perforator.jpg" alt = "bfg6000"/></a>
             </p>
-            <h3><a href = "#" class ="perforator-list">Перфоратор bosch<br> bfg 3000 </a></h3>
+            <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 3000 </a></h3>
             <p class ="del"><del>22500 р</del></p>
             <div class="new-buy">
               <p>15500 р.</p>
@@ -269,9 +265,9 @@
           </li>
           <li class ="catalog-item">
             <p>
-              <a href = "#"><img src = "img/perforator.jpg" alt = "bfg6000"/></a>
+              <a href = "#"><img src = "img/perforator_3.jpg" alt = "bfg6000"/></a>
             </p>
-            <h3><a href = "#" class ="perforator-list">Перфоратор bosch<br> bfg 6000</a></h3>
+            <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 6000</a></h3>
             <p class ="del"><del>30500 р</del></p>
             <div class="new-buy">
               <p>25500 р.</p>
@@ -280,8 +276,9 @@
           <li class ="catalog-item ">
             <p>
               <a href = "#"><img src = "img/perforator.jpg" alt = "bfg6000"/></a>
-            </p><br>
-            <h3><a href = "#" class ="perforator-list">Перфоратор bosch<br> bfg 2000</a></h3>
+            </p>
+            <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 2000</a></h3>
+            <p class ="del"><del></del></p>
 
             <div class="new-buy">
               <p>12500 р.</p>
@@ -292,9 +289,9 @@
       <section class ="pagination">
       <div class="container">
         <ul class = "pagination-list">
-          <li><a class= "pagination-current" href="">1</a></li>
-          <li><a class ="pagination" href="">2</a></li>
-          <li><a class ="pagination" href="">3</a></li>
+          <li><a class= "pagination-current pagination-item" href="">1</a></li>
+          <li><a class= "pagination-item" href="">2</a></li>
+          <li><a class ="pagination-item" href="">3</a></li>
           <li ><a class ="pagination-last" href="">Следующая</a></li>
         </ul>
         </div>
@@ -318,7 +315,7 @@
       <nav class = "navigation-footer">
         <div class="container">
           <div class="footer-wrapper">
-            <div class="logo">
+            <div class="logo-footer">
           <a href = ""><img src = "img/logo.png" width ="220" height ="62" alt = "логотип"/>
           </a>
         </div>
@@ -355,7 +352,7 @@
         <div class="container">
           <div class="copyright-technomart">
             <p>
-              &copy; 2010-2017 Компания &laquo;Техномарт&raquo;<br>
+              &copy; 2010-2019 Компания &laquo;Техномарт&raquo;<br>
               Все права защищены<br>
             </p>
           </div>
@@ -366,7 +363,8 @@
               <li><a href="https://www.instagram.com/htmlacademy"><img src = "img/insta-icon.png" alt = "Инстаграм"/></a></li>
             </ul>
           </div>
-          <p class ="Feedback"><img src = "img/vk-icon.png" alt = "в контакте"/>
+          <div class="contacts-wrapper">
+          <p class ="Feedback">
             Обратная связь:<br>
             <a href ="mailto:htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
@@ -375,6 +373,7 @@
             <a href ="http://htmlacademy.ru">htmlacademy.ru</a>
           </p>
         </div>
+      </div>
       </div>
     </footer>
 
