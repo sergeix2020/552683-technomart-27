@@ -414,29 +414,33 @@ position: relative;
   transform: translate(-621px);
 }
 
-#btn-1:checked ~ .other-main-catalog .image-perforator-one::before{
+
+#btn-1 ~ .other-main-catalog .image-perforator-one::before{
   position:absolute;
   z-index: 1;
   content:"Соседям на радость!";
   font-size:18px;
   line-height:24px;
-  top:53px;
+  top:73px;
   left:25px;
 }
-#btn-1:checked ~ .other-main-catalog .image-perforator-one::after{
+
+#btn-1 ~ .other-main-catalog .image-perforator-two::before{
   position:absolute;
+  z-index: 1;
   content:"Дрели";
-   z-index: 1;
   font-size:36px;
   line-height:36px;
-  top:15px;
-  left:22px;
+  top:37px;
+  left:25px;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 
-#btn-2:checked ~ .other-main-catalog .slider-slides:nth-child(1)::before{
+
+
+#btn-2 ~ .other-main-catalog .slider-slides:nth-child(1)::before{
   position:absolute;
   z-index: 2;
   content:"Настоящие мужские игрушки";
@@ -445,7 +449,7 @@ position: relative;
   top:53px;
   left:646px;
 }
-#btn-2:checked ~ .other-main-catalog .slider-slides:nth-child(1) ::after{
+#btn-2 ~ .other-main-catalog .slider-slides:nth-child(1) ::after{
   position:absolute;
    z-index: 2;
   content:"Перфораторы";
@@ -456,6 +460,7 @@ position: relative;
   text-transform: uppercase;
   font-weight: bold;
 }
+
 .form-product button{
   margin-top:57px;
   padding-left: 40px;
@@ -1249,7 +1254,6 @@ padding-left:20px;
   font-size:14px;
   line-height:18px;
   padding:10px 35px;
-  border:1px solid black;
 }
 
 .services-catalog-list li{
