@@ -13,7 +13,7 @@
         <div class="container">
           <div class="logo">
             <div class="logo-img">
-          <a href = ""><img src = "img/logo.png"   alt = "логотип"/>
+          <a href = "index.html"><img src = "img/logo.png"   alt = "логотип"/>
           </a>
           </div>
           <form class ="form-search active-red" action="#" method = "post">
@@ -29,7 +29,6 @@
           </ul>
       </div>
       </div>
-    </div>
     <div class="main-menu-header">
         <div class="container">
           <p class ="shop-description">
@@ -37,7 +36,7 @@
             строительных материалов<br> и инструментов для ремонта</p>
           <div class="wrapper-contacts">
             <p class ="header-contacts phone">
-              <a href = "tel:78125550555">+7(812)555-05-55</a><br>
+              <a href = "tel:78125550555">+7 (812) 555-05-55</a><br>
             </p>
             <span>г. Санкт-Петербург,ул. Б. Конюшенная,д. 19/8<br></span>
           </div>
@@ -57,7 +56,7 @@
     <div class = "navigation">
         <div class="container">
         <ul class = "main-nav">
-          <li><a href="inner.html">главная</a></li>
+          <li><a href="index.html.html">главная</a></li>
           <li><a href="#">Компания</a></li>
           <li><a href="#">Каталог</a></li>
           <li><a href="#">Новости</a></li>
@@ -126,24 +125,21 @@
 
      </div>
       <section class="svg-wrapper">
+        <!-- <h2 class="visually-hidden">Блок "Фильтр"</h2> -->
     <svg class ="filter-svg"  width="220" height="60"  fill="green">
-        <circle r="12" cx="30"cy="20" fill="#ffffff"/>
-        <circle r="12" cx="170"cy="20" fill="#ffffff"/>
-        <circle r="2" cx="30"cy="20" fill="#b1b1b1"/>
-         <circle r="2" cx="170"cy="20" fill="#b1b1b1"/>
-        <line x1="40" y1="20" x2="160" y2="20" stroke="#00ca74"stroke-width="2" />
-         <line x1="185" y1="20" x2="200" y2="20" stroke="#d7dcde"stroke-width="2" />
+        <circle r="12" cx="30" cy="20" fill="#ffffff"/>
+        <circle r="12" cx="170" cy="20" fill="#ffffff"/>
+        <circle r="2" cx="30" cy="20" fill="#b1b1b1"/>
+         <circle r="2" cx="170" cy="20" fill="#b1b1b1"/>
+        <line x1="40" y1="20" x2="160" y2="20" stroke="#00ca74" stroke-width="2" />
+         <line x1="185" y1="20" x2="200" y2="20" stroke="#d7dcde" stroke-width="2" />
       </svg>
   </section>
-  <div class="count-wrapper">
-
-         <url class ="count-number">
-           <li><span>0</span></li>
-           <li class ="not-style-number"><span class ="not-style-number" >-</span></li>
-           <li><span>30000</span></li>
-         </url>
-
-     </div>
+         <form class ="count-number" action="">
+           <input type="number" min="0" max="0" class ="count" vale = "1" placeholder ="0">
+           <li class ="not-style-number"><span class ="not-style-number" vale = "2" >__</span></li>
+           <input type="number" min="0" max="30000" class ="count-two" placeholder ="30000" >
+           </form>
         <!-- <h2 class="visability-hidden">Добавить в корзину</h2> -->
         <form class ="form-product" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset>
@@ -151,20 +147,20 @@
           <h2>Производители</h2>
           <ul class ="product-wrapper">
             <li><input type="checkbox" id ="filter-bosch" value="1" name ="product" checked>
-            <label for="filter-bosch" class ="filter-bosch">bosch</label>
+            <label for="filter-bosch" class ="filter filter-bosch">bosch</label>
           </li>
           <li><input type="checkbox" id ="filter-interscol" value="2"  name ="product">
-            <label for="filter-interscol" class ="filter-interscol">нтерскол</label>
+            <label for="filter-interscol" class ="filter filter-interscol">нтерскол</label>
           </li>
             <li><input type="checkbox" id ="filter-makita" value="3" name ="product" checked>
-            <label for="filter-makita" class = "filter-makita">makita</label>
+            <label for="filter-makita" class = "filter filter-makita">makita</label>
           </li>
             <li><input type="checkbox" id ="filter-dewalt" value="4" name ="product">
-            <label for="filter-dewalt" class = "filter-dewalt">dewalt</label>
+            <label for="filter-dewalt" class = "filter filter-dewalt">dewalt</label>
           </li>
           <li>
           <input type="checkbox" id ="filter-hitachi" value="5" name ="product">
-            <label for="filter-hitachi" class = "filter-hitachi">hitachi</label>
+            <label for="filter-hitachi" class = "filter filter-hitachi">hitachi</label>
           </li>
           </ul>
         </fieldset>
@@ -174,11 +170,11 @@
           <ul class ="product-wrapper">
           <li>
             <input type="radio" id ="filter-accumulator" name ="product" checked>
-            <label  class ="radio" for="filter-accumulator" class ="filter-accumulator">аккумуляторные</label>
+            <label for="filter-accumulator" class ="filter-accumulator">аккумуляторные</label>
           </li>
           <li class ="filter-radio-wrapper">
             <input type="radio" id ="filter-network" name ="product">
-            <label class ="radio" for="filter-network" class ="filter-network">сетевые</label>
+            <label for="filter-network" class ="filter-network">сетевые</label>
           </li>
         </ul>
         </fieldset>
@@ -189,7 +185,11 @@
       <section class = "catalog">
         <ul class = "catalog-items-product">
           <li class ="catalog-item">
-            <p>
+            <div class="empty">
+                <p class ="buy-p"> <a href = "" class ="buy">Купить</a></p>
+              <p class ="bookmark-p"><a  href = "" class ="bookmark">В Закладки</a></p>
+              </div>
+            <p class ="img">
               <a href = "#"> <img src = "img/perforator.jpg" alt = "bfg 3000"/></a>
             </p>
             <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 3000</a></h3>
@@ -199,7 +199,11 @@
             </div>
           </li>
           <li class ="catalog-item">
-            <p>
+            <div class="empty">
+                <p class ="buy-p"> <a href = "" class ="buy">Купить</a></p>
+              <p class ="bookmark-p"><a  href = "" class ="bookmark">В Закладки</a></p>
+              </div>
+            <p class ="img">
               <a href = "#"><img src = "img/perforator_3.jpg" alt = "bfg6000"/></a>
             </p>
             <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 6000</a></h3>
@@ -215,6 +219,9 @@
                 <p class ="buy-p"> <a href = "" class ="buy">Купить</a></p>
               <p class ="bookmark-p"><a  href = "" class ="bookmark">В Закладки</a></p>
               </div>
+              <p class = "img">
+              <a href = "#"><img src = "img/perforator.jpg" alt = "bfg6000"/></a>
+            </p>
                 <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 2000</a></h3>
                 <p class ="del"><del></del></p>
             </div>
@@ -224,7 +231,11 @@
               </div>
           </li>
           <li class ="catalog-item">
-            <p>
+            <div class="empty">
+                <p class ="buy-p"> <a href = "" class ="buy">Купить</a></p>
+              <p class ="bookmark-p"><a  href = "" class ="bookmark">В Закладки</a></p>
+              </div>
+            <p class ="img">
               <a href = "#"><img src = "img/perforator.jpg" alt = "bfg6000"/></a>
             </p>
             <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 3000</a></h3>
@@ -234,7 +245,11 @@
             </div>
           </li>
           <li class ="catalog-item label-new-catalog">
-            <p>
+            <div class="empty">
+                <p class ="buy-p"> <a href = "" class ="buy">Купить</a></p>
+              <p class ="bookmark-p"><a  href = "" class ="bookmark">В Закладки</a></p>
+              </div>
+            <p class ="img">
               <a href = "#"><img src = "img/perforator_3.jpg" alt = "bfg6000"/></a>
             </p>
             <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 6000 </a></h3>
@@ -244,7 +259,11 @@
             </div>
           </li>
           <li class ="catalog-item">
-            <p>
+            <div class="empty">
+                <p class ="buy-p"> <a href = "" class ="buy">Купить</a></p>
+              <p class ="bookmark-p"><a  href = "" class ="bookmark">В Закладки</a></p>
+              </div>
+            <p class ="img">
               <a href = "#"><img src = "img/perforator.jpg" alt = "bfg6000"/></a>
             </p>
             <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 2000</a></h3>
@@ -254,7 +273,11 @@
             </div>
           </li>
           <li class ="catalog-item label-new-catalog">
-            <p>
+            <div class="empty">
+                <p class ="buy-p"> <a href = "" class ="buy">Купить</a></p>
+              <p class ="bookmark-p"><a  href = "" class ="bookmark">В Закладки</a></p>
+              </div>
+            <p class ="img">
               <a href = "#"><img src = "img/perforator.jpg" alt = "bfg6000"/></a>
             </p>
             <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 3000 </a></h3>
@@ -264,7 +287,11 @@
             </div>
           </li>
           <li class ="catalog-item">
-            <p>
+            <div class="empty">
+                <p class ="buy-p"> <a href = "" class ="buy">Купить</a></p>
+              <p class ="bookmark-p"><a  href = "" class ="bookmark">В Закладки</a></p>
+              </div>
+            <p class ="img">
               <a href = "#"><img src = "img/perforator_3.jpg" alt = "bfg6000"/></a>
             </p>
             <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 6000</a></h3>
@@ -274,7 +301,11 @@
             </div>
           </li>
           <li class ="catalog-item ">
-            <p>
+            <div class="empty">
+                <p class ="buy-p"> <a href = "" class ="buy">Купить</a></p>
+              <p class ="bookmark-p"><a  href = "" class ="bookmark">В Закладки</a></p>
+              </div>
+            <p class ="img">
               <a href = "#"><img src = "img/perforator.jpg" alt = "bfg6000"/></a>
             </p>
             <h3><a href = "#" class ="perforator-list">Перфоратор BOSCH<br> BFG 2000</a></h3>
@@ -287,14 +318,13 @@
         </ul>
       </section>
       <section class ="pagination">
-      <div class="container">
+       <!--  <h2 class="visality-hidden">Блок Переключение страниц"</h2> -->
         <ul class = "pagination-list">
           <li><a class= "pagination-current pagination-item" href="">1</a></li>
           <li><a class= "pagination-item" href="">2</a></li>
           <li><a class ="pagination-item" href="">3</a></li>
           <li ><a class ="pagination-last" href="">Следующая</a></li>
         </ul>
-        </div>
       </section>
     </div>
   </div>
@@ -316,7 +346,7 @@
         <div class="container">
           <div class="footer-wrapper">
             <div class="logo-footer">
-          <a href = ""><img src = "img/logo.png" width ="220" height ="62" alt = "логотип"/>
+          <a href = "index.html"><img src = "img/logo-footer.png" width ="220" height ="62" alt = "логотип"/>
           </a>
         </div>
 
