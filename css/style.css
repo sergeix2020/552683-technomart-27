@@ -3,14 +3,10 @@ body{
   color:white;
   background-color: #ffffff;
   font-family:"Cuprum",PT Sans;
-
 }
 a{
   text-decoration:none;
 }
-
-
-
 img{
   /*max-width:100%;
   height:auto;*/
@@ -38,9 +34,6 @@ justify-content: space-between;
 .logo{
   display: flex;
   width:460px;
-
-
-
 }
 .top-menu-header .container {
   display:flex;
