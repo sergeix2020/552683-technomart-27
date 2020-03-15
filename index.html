@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -14,15 +13,16 @@
            <div class="header-top-wrapper">
           <div class="logo">
             <div class="logo-img">
-          <a href = ""><img src = "img/logo.png"   alt = "логотип"/>
-          </a>
+          <img src = "img/logo.png"   alt = "логотип"/>
           </div>
           <form class ="form-search active-red" action="#" method = "post">
+            <div class="wrapper-input">
             <input type="search" id ="search" name = "search"  placeholder="Поиск">
+            </div>
           </form>
           </div>
           <ul class ="button-preview button-preview-right">
-            <li class ="button button-bookmarks"><a class ="active" href = "button">Закладки: 0</a>
+            <li class ="button button-bookmarks"><a class ="active" href = "#">Закладки: 0</a>
 
             </li>
             <li class = "button button-cart"><a class ="active"  href = "#">Корзина: 0</a>
@@ -36,7 +36,7 @@
       <div class="main-menu-header">
         <div class="container">
           <p class ="shop-description">
-            Интернет магазин<br>
+            Интернет-магазин<br>
             строительных материалов<br> и инструментов для ремонта</p>
           <div class="wrapper-contacts">
             <p class ="header-contacts">
@@ -56,13 +56,13 @@
       <div class = "navigation">
         <div class="container">
           <ul class = "main-nav">
-            <li class = "flex-grow-two nav-align-left nav-main"><a href="inner.html">Главная</a></li>
-            <li class = "flex-grow-one nav-company"><a href="#">Компания</a></li>
-            <li class = "flex-grow-one nav-catalog"><a href="inner.html">Каталог</a></li>
+            <li class = "nav-main">Главная</li>
+            <li><a  class = "nav-company" href="#">Компания</a></li>
+            <li class = "nav-catalog"><a href="inner.html">Каталог</a></li>
             <li class = "nav-news"><a href="#">Новости</a></li>
-            <li class = "flex-grow-two nav-special-offer"><a href="#">Спецпредложения</a></li>
-            <li class = "flex-grow-one nav-delivery"><a href="#">Доставка</a></li>
-            <li class = " flex-grow-one nav-contacts"><a class ="n" href="#">Контакты</a></li>
+            <li class = "nav-special-offer"><a href="#">Спецпредложения</a></li>
+            <li class = "nav-delivery"><a href="#">Доставка</a></li>
+            <li><a  class = "nav-contacts" href="#">Контакты</a></li>
           </ul>
         </div>
       </div>
@@ -124,7 +124,7 @@
                <!--  <p><img src = "img/discount.png" alt ="скидки"/></p> -->
               </div>
               <div class ="main-catalog-list list-yellow catalog-list-yellow">
-                <h3>Доставка</h3>
+                <h3 class ="delivery-wrapper">Доставка</h3>
                  <p class ="taste list-yellow color-y"><a href="">бесплатно</a></p>
               </div>
             </div>
@@ -146,7 +146,7 @@
             <ul class ="catalog-items-product">
               <li class ="item-product">
                 <div class="empty">
-                <p class ="buy-p"> <a href = "" class ="buy">Купить</a></p>
+                <p class ="buy-p"> <a href = "" class = "buy-product">Купить</a></p>
               <p class ="bookmark-p"><a  href = "" class ="bookmark">В Закладки</a></p>
               </div>
               <p class ="img">
@@ -160,7 +160,7 @@
               </li>
               <li class ="item-product">
                 <div class="empty">
-                <p class ="buy-p"> <a href = "" class ="buy">Купить</a></p>
+                <p class ="buy-p"> <a href = "" class ="buy-product">Купить</a></p>
               <p class ="bookmark-p"><a  href = "" class ="bookmark">В Закладки</a></p>
               </div>
               <p class ="img">
@@ -174,7 +174,7 @@
               </li>
               <li class ="item-product">
                 <div class="empty">
-                <p class ="buy-p"> <a href = "" class ="buy">Купить</a></p>
+                <p class ="buy-p"> <a href = "" class ="buy-product">Купить</a></p>
               <p class ="bookmark-p"><a  href = "" class ="bookmark">В Закладки</a></p>
               </div>
               <p class ="img">
@@ -188,7 +188,7 @@
               </li>
               <li class ="item-product label-new">
                 <div class="empty">
-                <p class ="buy-p"> <a href = "" class ="buy">Купить</a></p>
+                <p class ="buy-p"> <a href = "" class ="buy-product">Купить</a></p>
               <p class ="bookmark-p"><a  href = "" class ="bookmark">В Закладки</a></p>
               </div>
               <p class ="img">
@@ -251,7 +251,13 @@
         <input type="radio" class ="tab-btn" id="tab-btn-3" name="toggle">
             <div class="services-catalog-list">
               <ul class ="services-catalog">
-                <li class ="services-item delivery-menu"><label for="tab-btn-1">Доставка</label>
+                <label for="tab-btn-1"><li class ="services-item delivery-menu">Доставка</label>
+                </li>
+                <label for="tab-btn-2"><li class = "services-item guarantee-menu">Гарантия</label>
+                </li>
+                <label for="tab-btn-3"><li class = "credit-menu services-item">Кредит</label>
+                </li>
+              </ul>
                   <ul class ="delivery">
                     <li>
                       <h2>Доставка</h2>
@@ -261,8 +267,6 @@
                       <p class ="img-delivery"></p>
                     </li>
                   </ul>
-                </li>
-                <li class = "services-item guarantee-menu"><label for="tab-btn-2">Гарантия</label>
                   <ul class = "guarantee">
                     <li>
                       <h2>Гарантия</h2>
@@ -274,8 +278,6 @@
                       <p class="img-guarantee"></p>
                     </li>
                   </ul>
-                </li>
-                <li class = "credit-menu services-item"><label for="tab-btn-3">Кредит</label>
                   <ul class ="credit">
                     <li>
                       <h2>Кредит</h2>
@@ -288,8 +290,6 @@
                       <p class =img-credit></p>
                     </li>
                   </ul>
-                </li>
-              </ul>
               </div>
             </div>
             </div>
@@ -303,8 +303,8 @@
       <div class="index-columns">
         <div class="container">
           <section class = "techomart-company">
-            <h2>компания &laquo;техномарт&raquo;</h2>
-            <p class ="presents-article">Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+            <h2>Компания &laquo;техномарт&raquo;</h2>
+            <p class ="presents-article">Настоящий мужской шопинг начинается здесь!Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
             <p class ="presents-article-two" >Мы можем доставить ваш товар в самые отдаленные точки России!<br>
             Техномарт работает со многими транспортными компаниями:</p>
             <ul class="select-company">
@@ -360,10 +360,8 @@
         <div class="container">
           <div class="footer-wrapper">
             <div class="logo-footer">
-          <a href = ""><img src = "img/logo-footer.png" width ="220" height ="62" alt = "логотип"/>
-          </a>
+          <img src = "img/logo-footer.png" width ="220" height ="62" alt = "логотип"/>
         </div>
-
           <ul class ="footer-list">
             <li><a href="">Компания</a></li>
             <li><a href="">Новости</a></li>
@@ -375,13 +373,11 @@
       </div>
       </nav>
        <div class="map-img">
-
      </div>
-
       <div class="footer-adr">
         <div class="container">
           <p class ="footer-adress">
-            г.Санкт-Петербург,ул.Конюшенная д.19/8<br>
+            г. Санкт-Петербург,ул. Б. Конюшенная д. 19/8<br>
             <a href = "tel:78125550555">+7(812)555-05-55</a><br>
           </p>
           <ul class ="product">
@@ -414,12 +410,11 @@
           </p>
           <p class ="htmlacademy-project">
             Разработано-<br>
-            <a href ="http://htmlacademy.ru">htmlacademy.ru</a>
+            <a href ="https://up.htmlacademy.ru/htmlcss/27">htmlacademy.ru</a>
           </p>
         </div>
       </div>
       </div>
     </footer>
-
   </body>
 </html>
