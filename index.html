@@ -17,7 +17,7 @@
           </div>
           <form class ="form-search active-red" action="#" method = "post">
             <div class="wrapper-input">
-            <input type="search" id ="search" class ="search" name = "search"  placeholder="Поиск">
+            <input type="search" id ="search" class ="search-placeholder" name = "search"  placeholder="Поиск">
             </div>
           </form>
           </div>
@@ -57,12 +57,12 @@
         <div class="container">
           <ul class = "main-nav">
             <li class = "nav-main">Главная</li>
-            <li><a  class = "nav-company" href="#">Компания</a></li>
-            <li class = "nav-catalog"><a href="inner.html">Каталог</a></li>
+            <li><a  class = "a nav-company" href="#">Компания</a></li>
+            <li class = "a nav-catalog"><a href="inner.html">Каталог</a></li>
             <li class = "nav-news"><a href="#">Новости</a></li>
             <li class = "nav-special-offer"><a href="#">Спецпредложения</a></li>
-            <li class = "nav-delivery"><a href="#">Доставка</a></li>
-            <li><a  class = "nav-contacts" href="#">Контакты</a></li>
+            <li class = "b nav-delivery"><a href="#">Доставка</a></li>
+            <li><a  class = "b nav-contacts" href="#">Контакты</a></li>
           </ul>
         </div>
       </div>
@@ -295,10 +295,7 @@
             </div>
           </div>
 
-              <!-- <svg  class ="svg" width="780" height="120">
-            <line x1="420" y1="0" x2="440" y2="20" stroke="#ee3643" stroke-width="5"/>
-            <line x1="440" y1="0" x2="420" y2="20" stroke="#ee3643" stroke-width="5"/>
-           </svg> -->
+
 
       <div class="index-columns">
         <div class="container">
@@ -322,16 +319,16 @@
               <p><img src = "img/map.jpg" width = "310" height = "160" alt = "карта"/></p>
               <span>Закрыть</span>
             </div>
-             <a href = "#">Заблудились? Напишите нам!</a>
+             <a class = "login-link" href = "login.html">Заблудились? Напишите нам!</a>
           </section>
         </div>
       </div>
       </main>
-<!-- <div class="window-wrapper">
-  <div class="container">
+<div class="window-wrapper">
+  <!-- <div class="container">
     <div class="map-window">
   </div>
-  </div>
+  </div> -->
          <section class ="section-form">
         <h2 class = "visability-hidden">Форма "Контакты"</h2>
         <form class ="form-contacts" action="https://echo.htmlacademy.ru/" method="post">
@@ -351,9 +348,13 @@
           <div class="button-wrapper">
           <button class ="button button-form" type ="submit">Отправить</button>
         </div>
+        <!--  <svg  class ="modal-close" width="50" height="50">
+            <line x1="420" y1="0" x2="440" y2="20" stroke="#ee3643" stroke-width="5"/>
+            <line x1="440" y1="0" x2="420" y2="20" stroke="#ee3643" stroke-width="5"/>
+           </svg> -->
         </form>
       </section>
-      </div> -->
+      </div>
 
    <footer class = "main-footer">
       <nav class = "navigation-footer">
@@ -416,5 +417,80 @@
       </div>
       </div>
     </footer>
+
+
+
+
+
+
+
+
+
+<script>
+  var link = document.querySelector(".login-link");
+
+  var popup = document.querySelector(".section-form");
+  var close = popup.querySelector(".modal-close");
+
+  var form = popup.querySelector("form");
+  var login = popup.querySelector("[name=login]");
+  var password = popup.querySelector("[name=password]");
+
+  var isStorageSupport = true;
+  var storage = "";
+
+  try {
+    storage = localStorage.getItem("login");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+
+    if (storage) {
+      login.value = storage;
+      password.focus();
+    } else {
+      login.focus();
+    }
+  });
+
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
+  });
+
+  form.addEventListener("submit", function (evt) {
+    if (!login.value || !password.value) {
+      evt.preventDefault();
+      popup.classList.remove("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal-error");
+    } else {
+      if (isStorageSupport) {
+        localStorage.setItem("login", login.value);
+      }
+    }
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
   </body>
 </html>
