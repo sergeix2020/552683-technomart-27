@@ -91,14 +91,9 @@ height: 42px;
   box-shadow: 0 1px 0 0 #000000;
 
 }
+
 .navigation .container{
   display: flex;
-}
-.nav-main{
-
-}
-.nav-main{
-  padding-left:20px;
 }
 .navigation .main-nav li{
 
@@ -159,6 +154,9 @@ padding-left:50px;
 .button-preview a{
   padding-top:11px;
 
+}
+.color-placeholder{
+  color:red;
 }
 .button-search{
   width:140px;
@@ -1344,6 +1342,7 @@ padding-left:20px;
   line-height:30px;
   color:#000000;
   font-weight: bold;
+
 }
   .form-product fieldset{
     border: none;
@@ -2558,6 +2557,7 @@ padding-top:40px;
   padding:50px 100px;
 }
 .section-form{
+  display: none;
   border-top:5px solid #ee3643;
 
   margin:0 auto;
@@ -2586,6 +2586,7 @@ padding-top:40px;
   padding-top:20px;
 }
 .form-contacts{
+  position: relative;
   width:630px;
   background-color: #ffffff;
   z-index: 3;
@@ -2620,22 +2621,57 @@ margin-bottom:30px;*/
 }*/
 
 
-.map-window{
 
+.search-placeholder::-webkit-input-placeholder {color:#ffffff;}
+
+.search-placeholder::-moz-placeholder          {color:#ffffff;}
+
+.search-placeholder:-moz-placeholder           {color:#ffffff;}
+.search:-ms-input-placeholder
+
+.search-placeholder::-webkit-input-placeholder {color:#ffffff;}
+
+.search-placeholder::-moz-placeholder          {color:#ffffff;}
+
+.search-placeholder:-moz-placeholder           {color:#ffffff;}
+.search:-ms-input-placeholder
+    {color:#ffffff;}
+
+
+
+.form-contacts::before,
+.form-contacts::after
+{
+  content:"";
+  position: absolute;
+  width:19px;
+  height:4px;
+  top:10px;
+  right:10px;
+  background-color:red;
+  z-index: 5;
+  cursor: pointer;
+
+}
+.form-contacts::before{
+  transform: rotate(45deg);
+}
+.form-contacts::after{
+  transform: rotate(-45deg);
+}
+.map-window{
 content:"";
 background-image:url("../img/map-1.jpg");
 background-repeat:no-repeat;
 height:400px;
 width:1200px;
 background-size: cover;
-
-
 }
 
-.svg{
+.modal-close{
   position:absolute;
-  top:490px;
-  left:320px;
+  top:0;
+  left:40px;
   z-index: 5;
    cursor:pointer;
 }
@@ -2662,3 +2698,69 @@ background-size: cover;
   color:#ee3643;
 }
 
+
+.modal-close{
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 44;
+}
+
+
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
