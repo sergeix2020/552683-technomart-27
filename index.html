@@ -315,11 +315,18 @@
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами,<br>
             заехав в наш офис</p>
+
             <div class="map-contacts">
-              <p><img src = "img/map.jpg" width = "310" height = "160" alt = "карта"/></p>
+              <p class = "map"><img src = "img/map.jpg" width = "310" height = "160" alt = "карта"/></p>
               <span>Закрыть</span>
             </div>
              <a class = "login-link" href = "login.html">Заблудились? Напишите нам!</a>
+          </section>
+          <section class="modal-map">
+            <div class="modal-close"></div>
+              <div class="iframe-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123838!2d30.320894615898915!3d59.938796869048154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1584568939938!5m2!1sru!2sru" width="940" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
           </section>
         </div>
       </div>
@@ -428,15 +435,16 @@
 
 
 <script>
-  var link = document.querySelector(".login-link");
-
+  var button = document.querySelector(".login-link");
   var popup = document.querySelector(".section-form");
+  var map = document.querySelector(".modal-map");
+  var contacts = document.querySelector(".contacts");
   var close = popup.querySelector(".modal-close");
-
+  var close_two =map.querySelector(".modal-close");
+  var click_map = contacts.querySelector(".map");
   var form = popup.querySelector("form");
   var login = popup.querySelector("[name=login]");
   var email = popup.querySelector("[name=email]");
-
   var isStorageSupport = true;
   var storage = "";
 
@@ -447,7 +455,7 @@
     isStorageSupport = false;
   }
 
-  link.addEventListener("click", function (evt) {
+  button.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
 
@@ -455,6 +463,7 @@
     if (storage) {
       login.value = storage;
       email.value = storage;
+
     }
   });
 
@@ -462,14 +471,15 @@
     popup.classList.remove("modal-show");
     popup.classList.remove("modal-error");
   });
+  close_two.addEventListener("click", function (evt) {
+    map.classList.remove("modal-show");
+  });
 
   form.addEventListener("submit", function (evt) {
 
     if (!login.value||!email) {
 
       evt.preventDefault();
-
-
       popup.classList.remove("modal-error");
       popup.offsetWidth = popup.offsetWidth;
       popup.classList.add("modal-error");
@@ -489,7 +499,13 @@
         popup.classList.remove("modal-show");
         popup.classList.remove("modal-error");
       }
+      if (map.classList.contains("modal-show")) {
+        map.classList.remove("modal-show");
+      }
     }
+  });
+  click_map.addEventListener("click", function (evt) {
+     map.classList.add("modal-show");
   });
 </script>
   </body>
