@@ -2198,6 +2198,7 @@ padding-bottom:15px;
    background-color:#ee3643;
    padding:10px 50px;
    color:#ffffff;
+
    text-transform: uppercase;
 }
 
@@ -2205,7 +2206,7 @@ padding-bottom:15px;
   list-style: none;
 
 }
-.product li:hover{
+.produ ct li:hover{
   text-decoration: underline;
 
 }
@@ -2630,6 +2631,7 @@ input[type="text"]{
 .form-contacts{
   position: relative;
   width:600px;
+   box-shadow: 0 0 15px 1px #000000;
   background-color: #ffffff;
   z-index: 3;
   border-top:5px solid #ee3643;
@@ -2704,6 +2706,13 @@ input[type="text"]{
 }
 .modal-close::after{
   transform: rotate(-45deg);
+}
+.modal-map{
+  display: none;
+position: absolute;
+bottom:-2300px;
+z-index: 88;
+
 }
 .map-window{
 content:"";
@@ -2807,4 +2816,10 @@ background-size: cover;
   80% {
     transform: translateX(10px);
   }
+}
+.iframe-map{
+
+}
+.map{
+  cursor:pointer;
 }
