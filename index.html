@@ -332,17 +332,18 @@
          <section class ="section-form">
         <h2 class = "visability-hidden">Форма "Контакты"</h2>
         <form class ="form-contacts" action="https://echo.htmlacademy.ru/" method="post">
+             <div class="modal-close"></div>
           <p class="name">
             <label for="your-name">Ваше имя:</label><br>
-            <input type="text" id ="your-name" name = "name" size ="38" placeholder ="Имя Фамилия">
+            <input type="text" id ="your-name" name = "login" size ="30" placeholder ="Имя Фамилия" required>
           </p>
           <p class="email">
-            <label for="your-email">Ваш e-email<br></label>
-            <input type="text" id ="your-email" name = "email" size ="38" placeholder ="email@example.com">
+            <label for="your-email">Ваш e-email:</label><br>
+            <input type="text" id ="your-email" name = "email" size ="30" placeholder ="email@example.com" required>
           </p><br>
           <p class="message-text">
             <label for="message">Текст письма:<br></label>
-            <textarea name="message" id="message"  cols="85" rows="5">В свободной форме</textarea>
+            <textarea name="message" id="message"  cols="70" rows="5">В свободной форме</textarea>
           </p>
           <br>
           <div class="button-wrapper">
@@ -434,13 +435,14 @@
 
   var form = popup.querySelector("form");
   var login = popup.querySelector("[name=login]");
-  var password = popup.querySelector("[name=password]");
+  var email = popup.querySelector("[name=email]");
 
   var isStorageSupport = true;
   var storage = "";
 
   try {
     storage = localStorage.getItem("login");
+    storage = localStorage.getItem("email");
   } catch (err) {
     isStorageSupport = false;
   }
@@ -449,29 +451,32 @@
     evt.preventDefault();
     popup.classList.add("modal-show");
 
+
     if (storage) {
       login.value = storage;
-      password.focus();
-    } else {
-      login.focus();
+      email.value = storage;
     }
   });
 
   close.addEventListener("click", function (evt) {
-    evt.preventDefault();
     popup.classList.remove("modal-show");
     popup.classList.remove("modal-error");
   });
 
   form.addEventListener("submit", function (evt) {
-    if (!login.value || !password.value) {
+
+    if (!login.value||!email) {
+
       evt.preventDefault();
+
+
       popup.classList.remove("modal-error");
       popup.offsetWidth = popup.offsetWidth;
       popup.classList.add("modal-error");
     } else {
       if (isStorageSupport) {
         localStorage.setItem("login", login.value);
+        localStorage.setItem("email", email.value);
       }
     }
   });
@@ -480,17 +485,12 @@
     if (evt.keyCode === 27) {
       evt.preventDefault();
       if (popup.classList.contains("modal-show")) {
+
         popup.classList.remove("modal-show");
         popup.classList.remove("modal-error");
       }
     }
   });
 </script>
-
-
-
-
-
-
   </body>
 </html>
