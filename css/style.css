@@ -1108,6 +1108,9 @@ list-style: none;
 .increase-decrease span:hover{
   color:#000000;
 }
+.increase-decrease span:active{
+  color:red;
+}
 .decrease span{
   color:#c5c5c5;
   margin-left:20px;
@@ -1676,6 +1679,9 @@ margin-right:0;
 }
 .sort li:hover{
 color:blue;
+}
+.sort a:active{
+color:red;
 }
 .sort-type, .sort-functional{
   border-bottom:1px dotted #ee3643;
