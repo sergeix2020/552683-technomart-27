@@ -1067,7 +1067,7 @@ list-style: none;
 .perforator-article{
   width:100%;
   background-color:#f2f6f8;
-  margin-bottom:20px;
+  height: 100px;
 }
 .perforator-article h1{
   padding-left:30px;
