@@ -2209,6 +2209,10 @@ padding-bottom:15px;
   text-decoration: underline;
 
 }
+.button-form{
+  padding-left:50px;
+  margin-bottom:30px;
+}
 .product li:active{
   opacity:0.5;
 
@@ -2625,13 +2629,15 @@ input[type="text"]{
 }
 .form-contacts{
   position: relative;
-  width:750px;
+  width:600px;
   background-color: #ffffff;
   z-index: 3;
   border-top:5px solid #ee3643;
 }
 .button-form{
   margin-left:50px;
+  height:30px;
+  border-radius: 5px;
 }
 
 .message-text{
