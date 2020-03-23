@@ -2792,4 +2792,8 @@ background-size: cover;
   width:310px;
   height:160px;
 }
-
+.inc{
+  display: block;
+ margin-top:-15px;
+ margin-bottom: 15px;
+}
